@@ -1,0 +1,102 @@
+\hypertarget{structPose}{}\section{Pose Struct Reference}
+\label{structPose}\index{Pose@{Pose}}
+
+
+A simple representation of the position/orientation of an entity within the \hyperlink{classArena}{Arena}.  
+
+
+
+
+{\ttfamily \#include $<$pose.\+h$>$}
+
+
+
+Collaboration diagram for Pose\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{structPose__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPose_a8a4171c8a6b09e37fb011997da9ea2ad}{Pose} ()\hypertarget{structPose_a8a4171c8a6b09e37fb011997da9ea2ad}{}\label{structPose_a8a4171c8a6b09e37fb011997da9ea2ad}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. Initialize the pose to (0,0,0) \end{DoxyCompactList}\item 
+\hyperlink{structPose_ac947d7046547d883f782ab2408cb80ed}{Pose} (double in\+\_\+x, double in\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bfseries Pose} (double in\+\_\+x, double in\+\_\+y, double in\+\_\+theta)\hypertarget{structPose_a6ebb8a1510c5915fa1dbec0f7ba0ad1c}{}\label{structPose_a6ebb8a1510c5915fa1dbec0f7ba0ad1c}
+
+\item 
+\hyperlink{structPose}{Pose} \& \hyperlink{structPose_aec0a9478daefa358aa2f1873cbaf0271}{operator=} (const \hyperlink{structPose}{Pose} \&other)=default
+\begin{DoxyCompactList}\small\item\em Default assignment operator. Simply copies the (x,y) values of another \hyperlink{structPose}{Pose}. \end{DoxyCompactList}\item 
+bool \hyperlink{structPose_a6dc8064128128927139c89a9b9181b8a}{operator==} (const \hyperlink{structPose}{Pose} other) const \hypertarget{structPose_a6dc8064128128927139c89a9b9181b8a}{}\label{structPose_a6dc8064128128927139c89a9b9181b8a}
+
+\begin{DoxyCompactList}\small\item\em Overloaded comparison operator. Since the values being compared from pose to pose are doubles which cannot be compared using $>$ and $<$ directly, this operator uses the mathematical limits package to compare the differences between the x, y, and theta, values of two poses against the epsilon value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries x} \{0\}\hypertarget{structPose_a0061c7789df90f593ab95118cbef387f}{}\label{structPose_a0061c7789df90f593ab95118cbef387f}
+
+\item 
+double {\bfseries y} \{0\}\hypertarget{structPose_a6280216efe0840a7a55f025ad04e3b3d}{}\label{structPose_a6280216efe0840a7a55f025ad04e3b3d}
+
+\item 
+double {\bfseries theta} \{0.\+0\}\hypertarget{structPose_a25709c116282114c9f512b205f3f1133}{}\label{structPose_a25709c116282114c9f512b205f3f1133}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple representation of the position/orientation of an entity within the \hyperlink{classArena}{Arena}. 
+
+N\+O\+TE\+: Origin (0,0) is at the upper left corner of the \hyperlink{classArena}{Arena}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pose@{Pose}!Pose@{Pose}}
+\index{Pose@{Pose}!Pose@{Pose}}
+\subsubsection[{\texorpdfstring{Pose(double in\+\_\+x, double in\+\_\+y)}{Pose(double in_x, double in_y)}}]{\setlength{\rightskip}{0pt plus 5cm}Pose\+::\+Pose (
+\begin{DoxyParamCaption}
+\item[{double}]{in\+\_\+x, }
+\item[{double}]{in\+\_\+y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structPose_ac947d7046547d883f782ab2408cb80ed}{}\label{structPose_ac947d7046547d883f782ab2408cb80ed}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+x} & The X component of the \hyperlink{structPose}{Pose}. \\
+\hline
+{\em in\+\_\+y} & The Y component of the \hyperlink{structPose}{Pose}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Pose@{Pose}!operator=@{operator=}}
+\index{operator=@{operator=}!Pose@{Pose}}
+\subsubsection[{\texorpdfstring{operator=(const Pose \&other)=default}{operator=(const Pose &other)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pose}\& Pose\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pose} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{structPose_aec0a9478daefa358aa2f1873cbaf0271}{}\label{structPose_aec0a9478daefa358aa2f1873cbaf0271}
+
+
+Default assignment operator. Simply copies the (x,y) values of another \hyperlink{structPose}{Pose}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \hyperlink{structPose}{Pose} object to copy from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The left-\/hand-\/side \hyperlink{structPose}{Pose} object that is now identical (in value) to {\ttfamily other}. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{pose_8h}{pose.\+h}\end{DoxyCompactItemize}

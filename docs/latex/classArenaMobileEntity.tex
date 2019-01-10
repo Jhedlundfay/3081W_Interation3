@@ -1,0 +1,68 @@
+\hypertarget{classArenaMobileEntity}{}\section{Arena\+Mobile\+Entity Class Reference}
+\label{classArenaMobileEntity}\index{Arena\+Mobile\+Entity@{Arena\+Mobile\+Entity}}
+
+
+A mobile entity in the \hyperlink{classArena}{Arena}, capable of updating its own position and/or velocity when asked by the simulation.  
+
+
+
+
+{\ttfamily \#include $<$arena\+\_\+mobile\+\_\+entity.\+h$>$}
+
+
+
+Inheritance diagram for Arena\+Mobile\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classArenaMobileEntity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arena\+Mobile\+Entity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classArenaMobileEntity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArenaMobileEntity_a6d038ac71d9b149052fc5a0fec4907f9}{Arena\+Mobile\+Entity} ()\hypertarget{classArenaMobileEntity_a6d038ac71d9b149052fc5a0fec4907f9}{}\label{classArenaMobileEntity_a6d038ac71d9b149052fc5a0fec4907f9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}\textquotesingle{}s constructor. \end{DoxyCompactList}\item 
+{\bfseries Arena\+Mobile\+Entity} (const \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} \&other)=delete\hypertarget{classArenaMobileEntity_ad662f3efc1a56b64ecaf5633e7ff2139}{}\label{classArenaMobileEntity_ad662f3efc1a56b64ecaf5633e7ff2139}
+
+\item 
+\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} \& {\bfseries operator=} (const \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} \&other)=delete\hypertarget{classArenaMobileEntity_a34a7f0d094515cafff7611a0f6cf4eee}{}\label{classArenaMobileEntity_a34a7f0d094515cafff7611a0f6cf4eee}
+
+\item 
+virtual double {\bfseries get\+\_\+speed} ()\hypertarget{classArenaMobileEntity_a2116341414a3ad0449dc03efa6ea500b}{}\label{classArenaMobileEntity_a2116341414a3ad0449dc03efa6ea500b}
+
+\item 
+virtual void {\bfseries set\+\_\+speed} (double sp)\hypertarget{classArenaMobileEntity_a1a047f4377a9557516a2e1d6d73db849}{}\label{classArenaMobileEntity_a1a047f4377a9557516a2e1d6d73db849}
+
+\item 
+\hyperlink{classSensorTouch}{Sensor\+Touch} $\ast$ \hyperlink{classArenaMobileEntity_ae9507f1b0c6bfdfd62afbab8a9a150f7}{get\+\_\+touch\+\_\+sensor} ()\hypertarget{classArenaMobileEntity_ae9507f1b0c6bfdfd62afbab8a9a150f7}{}\label{classArenaMobileEntity_ae9507f1b0c6bfdfd62afbab8a9a150f7}
+
+\begin{DoxyCompactList}\small\item\em Get a pointer to the \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}\textquotesingle{}s touch sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensorTouch}{Sensor\+Touch} $\ast$ {\bfseries sensor\+\_\+touch\+\_\+}\hypertarget{classArenaMobileEntity_a260fd3fba196ee9ab56f9f2ce6ab4a21}{}\label{classArenaMobileEntity_a260fd3fba196ee9ab56f9f2ce6ab4a21}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A mobile entity in the \hyperlink{classArena}{Arena}, capable of updating its own position and/or velocity when asked by the simulation. 
+
+All mobile entities must have a heading angle so that their orientation can be properly drawn by the \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer}.
+
+Since this is also a parent class, many of its methods are intuitively {\ttfamily virtual}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{arena__mobile__entity_8h}{arena\+\_\+mobile\+\_\+entity.\+h}\end{DoxyCompactItemize}

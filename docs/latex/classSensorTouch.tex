@@ -1,0 +1,98 @@
+\hypertarget{classSensorTouch}{}\section{Sensor\+Touch Class Reference}
+\label{classSensorTouch}\index{Sensor\+Touch@{Sensor\+Touch}}
+
+
+Class representing a touch sensor.  
+
+
+
+
+{\ttfamily \#include $<$sensor\+\_\+touch.\+h$>$}
+
+
+
+Collaboration diagram for Sensor\+Touch\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classSensorTouch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensorTouch_ab8e0dc693ec2fbc1aa5ff25ee2bfdb19}{Sensor\+Touch} ()\hypertarget{classSensorTouch_ab8e0dc693ec2fbc1aa5ff25ee2bfdb19}{}\label{classSensorTouch_ab8e0dc693ec2fbc1aa5ff25ee2bfdb19}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const \hyperlink{structPose}{Pose} \& \hyperlink{classSensorTouch_a9f56fd943758125611863ce2bc0d9365}{get\+\_\+point\+\_\+of\+\_\+contact} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the point of contact. \end{DoxyCompactList}\item 
+void \hyperlink{classSensorTouch_a2ef6d89a8e763e21f82e03a3033a490f}{set\+\_\+point\+\_\+of\+\_\+contact} (const \hyperlink{structPose}{Pose} \&p)
+\begin{DoxyCompactList}\small\item\em Setter method for the point of contact. \end{DoxyCompactList}\item 
+bool \hyperlink{classSensorTouch_a6a2f77ea46d008f4a058bfb24db742e0}{get\+\_\+output} () const \hypertarget{classSensorTouch_a6a2f77ea46d008f4a058bfb24db742e0}{}\label{classSensorTouch_a6a2f77ea46d008f4a058bfb24db742e0}
+
+\begin{DoxyCompactList}\small\item\em Getter for output, which is true when collision occurs. \end{DoxyCompactList}\item 
+void \hyperlink{classSensorTouch_a1980b126f7c6d0e6bdf75f1bb59fe5c2}{Handle\+Collision} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} Entity\+Type object\+\_\+type, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Modify heading to presumably move away from collision. \end{DoxyCompactList}\item 
+void \hyperlink{classSensorTouch_ad0054916c97844a51052e5dee63f68b9}{Reset} ()\hypertarget{classSensorTouch_ad0054916c97844a51052e5dee63f68b9}{}\label{classSensorTouch_ad0054916c97844a51052e5dee63f68b9}
+
+\begin{DoxyCompactList}\small\item\em Reset the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a touch sensor. 
+
+Touch or \char`\"{}bump\char`\"{} sensors are \char`\"{}active\char`\"{} when pressed. For our purposes, imagine a series of bump sensors around the perimeter of an entity. A collision will activate the sensor at a particular point of contact, which translates to an angle of contact.
+
+\hyperlink{classSensorTouch}{Sensor\+Touch} can be observed for collision events. 
+
+\subsection{Member Function Documentation}
+\index{Sensor\+Touch@{Sensor\+Touch}!get\+\_\+point\+\_\+of\+\_\+contact@{get\+\_\+point\+\_\+of\+\_\+contact}}
+\index{get\+\_\+point\+\_\+of\+\_\+contact@{get\+\_\+point\+\_\+of\+\_\+contact}!Sensor\+Touch@{Sensor\+Touch}}
+\subsubsection[{\texorpdfstring{get\+\_\+point\+\_\+of\+\_\+contact()}{get_point_of_contact()}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Pose}\& Sensor\+Touch\+::get\+\_\+point\+\_\+of\+\_\+contact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSensorTouch_a9f56fd943758125611863ce2bc0d9365}{}\label{classSensorTouch_a9f56fd943758125611863ce2bc0d9365}
+
+
+Getter method for the point of contact. 
+
+Should only be called when the sensor is activated.
+
+\begin{DoxyReturn}{Returns}
+The latest point of contact. 
+\end{DoxyReturn}
+\index{Sensor\+Touch@{Sensor\+Touch}!Handle\+Collision@{Handle\+Collision}}
+\index{Handle\+Collision@{Handle\+Collision}!Sensor\+Touch@{Sensor\+Touch}}
+\subsubsection[{\texorpdfstring{Handle\+Collision(\+\_\+\+\_\+unused Entity\+Type object\+\_\+type, \+\_\+\+\_\+unused Arena\+Entity $\ast$object)}{HandleCollision(__unused EntityType object_type, __unused ArenaEntity *object)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Touch\+::\+Handle\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} Entity\+Type}]{object\+\_\+type, }
+\item[{{\bf \+\_\+\+\_\+unused} {\bf Arena\+Entity} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{classSensorTouch_a1980b126f7c6d0e6bdf75f1bb59fe5c2}{}\label{classSensorTouch_a1980b126f7c6d0e6bdf75f1bb59fe5c2}
+
+
+Modify heading to presumably move away from collision. 
+
+Currently, no information is used to determine point of contact. The heading should really only change when it collides with something in front of it (as opposed to something running into the entity from behind.) The \hyperlink{classArenaEntity}{Arena\+Entity} can be used to determine the point of contact. \index{Sensor\+Touch@{Sensor\+Touch}!set\+\_\+point\+\_\+of\+\_\+contact@{set\+\_\+point\+\_\+of\+\_\+contact}}
+\index{set\+\_\+point\+\_\+of\+\_\+contact@{set\+\_\+point\+\_\+of\+\_\+contact}!Sensor\+Touch@{Sensor\+Touch}}
+\subsubsection[{\texorpdfstring{set\+\_\+point\+\_\+of\+\_\+contact(const Pose \&p)}{set_point_of_contact(const Pose &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\+Touch\+::set\+\_\+point\+\_\+of\+\_\+contact (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pose} \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSensorTouch_a2ef6d89a8e763e21f82e03a3033a490f}{}\label{classSensorTouch_a2ef6d89a8e763e21f82e03a3033a490f}
+
+
+Setter method for the point of contact. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The new point of contact. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sensor__touch_8h}{sensor\+\_\+touch.\+h}\item 
+src/\hyperlink{sensor__touch_8cc}{sensor\+\_\+touch.\+cc}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{classArena}{}\section{Arena Class Reference}
+\label{classArena}\index{Arena@{Arena}}
+
+
+The main class for the simulation of a 2D world with many entities running around.  
+
+
+
+
+{\ttfamily \#include $<$arena.\+h$>$}
+
+
+
+Collaboration diagram for Arena\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classArena__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArena_ac442d519facc5feebfd7612a53817e9a}{Arena} (const struct \hyperlink{structarena__params}{arena\+\_\+params} $\ast$const params)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArena}{Arena}\textquotesingle{}s constructor. \end{DoxyCompactList}\item 
+\hyperlink{classArena_ae21b399e9e3f6b8ac4ecc44d7d1667fc}{$\sim$\+Arena} ()\hypertarget{classArena_ae21b399e9e3f6b8ac4ecc44d7d1667fc}{}\label{classArena_ae21b399e9e3f6b8ac4ecc44d7d1667fc}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classArena}{Arena}\textquotesingle{}s destructor. {\ttfamily delete} all entities created. \end{DoxyCompactList}\item 
+void \hyperlink{classArena_ad92d8b2e1593b652445e31d173977fc6}{Advance\+Time} (double dt)
+\begin{DoxyCompactList}\small\item\em Advance the simulation by the specified \# of steps. \end{DoxyCompactList}\item 
+void {\bfseries Add\+Robots} (Entity\+Type type, int quantity)\hypertarget{classArena_a00a222a1938fe0b33e5715b7bc284f10}{}\label{classArena_a00a222a1938fe0b33e5715b7bc284f10}
+
+\item 
+void {\bfseries Add\+Entity} (Entity\+Type type, int quantity)\hypertarget{classArena_a9e00ef1a079d49d648359952fcfaa9f3}{}\label{classArena_a9e00ef1a079d49d648359952fcfaa9f3}
+
+\item 
+void \hyperlink{classArena_a16fac8e4b2399fcf0db01a9722069c33}{Accept\+Command} (Communication com)
+\begin{DoxyCompactList}\small\item\em Receive commands from the \hyperlink{classController}{Controller}. \end{DoxyCompactList}\item 
+void \hyperlink{classArena_a95e295d03a14385f4402a8e839fbae9b}{Reset} ()\hypertarget{classArena_a95e295d03a14385f4402a8e839fbae9b}{}\label{classArena_a95e295d03a14385f4402a8e839fbae9b}
+
+\begin{DoxyCompactList}\small\item\em Reset all entities in \hyperlink{classArena}{Arena}. \end{DoxyCompactList}\item 
+std\+::vector$<$ class \hyperlink{classRobot}{Robot} $\ast$ $>$ \hyperlink{classArena_a8deeb917467907421cc5eca257c4d59d}{get\+\_\+robots} () const 
+\begin{DoxyCompactList}\small\item\em Get the robots in \hyperlink{classArena}{Arena}. \end{DoxyCompactList}\item 
+\hyperlink{classArena}{Arena} \& \hyperlink{classArena_aa977a50aa4a5570a2a553705f1909e9b}{operator=} (const \hyperlink{classArena}{Arena} \&other)=delete\hypertarget{classArena_aa977a50aa4a5570a2a553705f1909e9b}{}\label{classArena_aa977a50aa4a5570a2a553705f1909e9b}
+
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the assignment operator is not defined. This {\ttfamily deletes} the default assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classArena_afce6e35e1470823539dc9194bef77499}{Arena} (const \hyperlink{classArena}{Arena} \&other)=delete\hypertarget{classArena_afce6e35e1470823539dc9194bef77499}{}\label{classArena_afce6e35e1470823539dc9194bef77499}
+
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the copy constructor is not defined. This {\ttfamily deletes} the default copy constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classArena_ab4479b0268867602d0c4b510d5f99aff}{Is\+Colliding} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$const mobile\+\_\+e, \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$const other\+\_\+e)
+\begin{DoxyCompactList}\small\item\em Determine if two entities have collided in the \hyperlink{classArena}{Arena}. Collision is defined as the distance between two entities being less than the sum of their radii. \end{DoxyCompactList}\item 
+void \hyperlink{classArena_a2506fab770b6070d8f061bcab4c65138}{Adjust\+Entity\+Overlap} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$const mobile\+\_\+e, \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$const other\+\_\+e)\hypertarget{classArena_a2506fab770b6070d8f061bcab4c65138}{}\label{classArena_a2506fab770b6070d8f061bcab4c65138}
+
+\begin{DoxyCompactList}\small\item\em Move the mobile entity to the edge of the other without overlap. Without this, entities tend to get stuck inside one another. \end{DoxyCompactList}\item 
+Entity\+Type \hyperlink{classArena_a7b72cf7688ee6ab1395bf438663bc1da}{Get\+Collision\+Wall} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$const ent)
+\begin{DoxyCompactList}\small\item\em Determine if a particular entity has gone out of the boundaries of the simulation (i.\+e. has collided with any one of the walls). \end{DoxyCompactList}\item 
+void \hyperlink{classArena_a51c1e99dfd9a618c6041fd22d0a11959}{Adjust\+Wall\+Overlap} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$const ent, Entity\+Type wall)\hypertarget{classArena_a51c1e99dfd9a618c6041fd22d0a11959}{}\label{classArena_a51c1e99dfd9a618c6041fd22d0a11959}
+
+\begin{DoxyCompactList}\small\item\em Move the entity to the edge of the wall without overlap. Without this, entities tend to get stuck in walls. \end{DoxyCompactList}\item 
+void \hyperlink{classArena_a682ec81cb30e36e5bb801b3388bcb494}{Update\+Entities\+Timestep} ()
+\begin{DoxyCompactList}\small\item\em Update all entities for a single timestep. \end{DoxyCompactList}\item 
+std\+::vector$<$ class \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$ $>$ {\bfseries get\+\_\+entities} () const \hypertarget{classArena_aabb4ffe05aefc71ee10d47b191963fe5}{}\label{classArena_aabb4ffe05aefc71ee10d47b191963fe5}
+
+\item 
+std\+::vector$<$ class \hyperlink{classSensor}{Sensor} $\ast$ $>$ {\bfseries get\+\_\+sensors} () const \hypertarget{classArena_aa2b6e96be6d2a654364f6b550a1128f5}{}\label{classArena_aa2b6e96be6d2a654364f6b550a1128f5}
+
+\item 
+double {\bfseries get\+\_\+x\+\_\+dim} ()\hypertarget{classArena_a5e3be20f2c67338a5a684b85a66f6b96}{}\label{classArena_a5e3be20f2c67338a5a684b85a66f6b96}
+
+\item 
+double {\bfseries get\+\_\+y\+\_\+dim} ()\hypertarget{classArena_a35737d65ff32f2bd5871f0bdfbc10a85}{}\label{classArena_a35737d65ff32f2bd5871f0bdfbc10a85}
+
+\item 
+int {\bfseries get\+\_\+game\+\_\+status} () const \hypertarget{classArena_a6d196837daa08a2618c3ff6e0a741b25}{}\label{classArena_a6d196837daa08a2618c3ff6e0a741b25}
+
+\item 
+void {\bfseries set\+\_\+game\+\_\+status} (int status)\hypertarget{classArena_ac8e8b3438db02aa5395f7fcb537ed952}{}\label{classArena_ac8e8b3438db02aa5395f7fcb537ed952}
+
+\item 
+\hyperlink{structarena__params}{arena\+\_\+params} {\bfseries get\+\_\+params} ()\hypertarget{classArena_a899bc1eb7a4cd6eefe162685e9503513}{}\label{classArena_a899bc1eb7a4cd6eefe162685e9503513}
+
+\item 
+void {\bfseries set\+\_\+params} (\hyperlink{structarena__params}{arena\+\_\+params} params)\hypertarget{classArena_a4034ce5ef392353e3f9b2e0c76fdabbd}{}\label{classArena_a4034ce5ef392353e3f9b2e0c76fdabbd}
+
+\item 
+\hyperlink{classEntityFactory}{Entity\+Factory} $\ast$ {\bfseries get\+\_\+factory} ()\hypertarget{classArena_a684050e2bd1c7a6ecb57c38575fec995}{}\label{classArena_a684050e2bd1c7a6ecb57c38575fec995}
+
+\item 
+float {\bfseries get\+\_\+f\+\_\+e\+\_\+ratio} () const \hypertarget{classArena_ad8cfd21ef48945d824470471efbdf9e2}{}\label{classArena_ad8cfd21ef48945d824470471efbdf9e2}
+
+\item 
+void {\bfseries set\+\_\+f\+\_\+e\+\_\+ratio} (float value)\hypertarget{classArena_a7421c2823656da9a2a2457066a2610f7}{}\label{classArena_a7421c2823656da9a2a2457066a2610f7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main class for the simulation of a 2D world with many entities running around. 
+
+While \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} handles the graphics, \hyperlink{classArena}{Arena} handles all the data and all the entities (it is the model of M\+VC). It manages the interaction among the entities in the \hyperlink{classArena}{Arena}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Arena@{Arena}!Arena@{Arena}}
+\index{Arena@{Arena}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Arena(const struct arena\+\_\+params $\ast$const params)}{Arena(const struct arena_params *const params)}}]{\setlength{\rightskip}{0pt plus 5cm}Arena\+::\+Arena (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf arena\+\_\+params} $\ast$const}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classArena_ac442d519facc5feebfd7612a53817e9a}{}\label{classArena_ac442d519facc5feebfd7612a53817e9a}
+
+
+\hyperlink{classArena}{Arena}\textquotesingle{}s constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & A \hyperlink{structarena__params}{arena\+\_\+params} passed down from \hyperlink{main_8cc}{main.\+cc} for the initialization of \hyperlink{classArena}{Arena} and the entities therein.\\
+\hline
+\end{DoxyParams}
+Initialize all private variables and entities. 
+
+\subsection{Member Function Documentation}
+\index{Arena@{Arena}!Accept\+Command@{Accept\+Command}}
+\index{Accept\+Command@{Accept\+Command}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Accept\+Command(\+Communication com)}{AcceptCommand(Communication com)}}]{\setlength{\rightskip}{0pt plus 5cm}void Arena\+::\+Accept\+Command (
+\begin{DoxyParamCaption}
+\item[{Communication}]{com}
+\end{DoxyParamCaption}
+)}\hypertarget{classArena_a16fac8e4b2399fcf0db01a9722069c33}{}\label{classArena_a16fac8e4b2399fcf0db01a9722069c33}
+
+
+Receive commands from the \hyperlink{classController}{Controller}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em com} & of the communication struct, the type used by the controller to send message to the gui and the arena\\
+\hline
+\end{DoxyParams}
+\+: Call the appropriate \hyperlink{classRobot}{Robot} functions to implement user input for controlling the robot. \index{Arena@{Arena}!Advance\+Time@{Advance\+Time}}
+\index{Advance\+Time@{Advance\+Time}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Advance\+Time(double dt)}{AdvanceTime(double dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void Arena\+::\+Advance\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{classArena_ad92d8b2e1593b652445e31d173977fc6}{}\label{classArena_ad92d8b2e1593b652445e31d173977fc6}
+
+
+Advance the simulation by the specified \# of steps. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & The \# of steps to increment by. This is practically unused because the arena state is advanced incrementally at a fixed rate.\\
+\hline
+\end{DoxyParams}
+If {\ttfamily dt == 0}, {\ttfamily return} immediately. Otherwise calls \hyperlink{classArena_a682ec81cb30e36e5bb801b3388bcb494}{Arena\+::\+Update\+Entities\+Timestep()} once. \index{Arena@{Arena}!get\+\_\+robots@{get\+\_\+robots}}
+\index{get\+\_\+robots@{get\+\_\+robots}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{get\+\_\+robots() const }{get_robots() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$class {\bf Robot} $\ast$$>$ Arena\+::get\+\_\+robots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classArena_a8deeb917467907421cc5eca257c4d59d}{}\label{classArena_a8deeb917467907421cc5eca257c4d59d}
+
+
+Get the robots in \hyperlink{classArena}{Arena}. 
+
+\begin{DoxyReturn}{Returns}
+A vector of the robots. 
+\end{DoxyReturn}
+\index{Arena@{Arena}!Get\+Collision\+Wall@{Get\+Collision\+Wall}}
+\index{Get\+Collision\+Wall@{Get\+Collision\+Wall}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Get\+Collision\+Wall(\+Arena\+Mobile\+Entity $\ast$const ent)}{GetCollisionWall(ArenaMobileEntity *const ent)}}]{\setlength{\rightskip}{0pt plus 5cm}Entity\+Type Arena\+::\+Get\+Collision\+Wall (
+\begin{DoxyParamCaption}
+\item[{{\bf Arena\+Mobile\+Entity} $\ast$const}]{ent}
+\end{DoxyParamCaption}
+)}\hypertarget{classArena_a7b72cf7688ee6ab1395bf438663bc1da}{}\label{classArena_a7b72cf7688ee6ab1395bf438663bc1da}
+
+
+Determine if a particular entity has gone out of the boundaries of the simulation (i.\+e. has collided with any one of the walls). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em ent} & The entity to check. \\
+\hline
+\mbox{\tt out}  & {\em An} & entity type signifying wall (e.\+g. k\+Right\+Wall). k\+Undefined if no collision.\\
+\hline
+\end{DoxyParams}
+The checked entity\textquotesingle{}s position will be updated to a \char`\"{}back-\/off position\char`\"{} so that it won\textquotesingle{}t get stuck into a wall. The calculation of the \char`\"{}back-\/off
+position\char`\"{} is technically not accurate, but good enough for our purpose. \index{Arena@{Arena}!Is\+Colliding@{Is\+Colliding}}
+\index{Is\+Colliding@{Is\+Colliding}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Is\+Colliding(\+Arena\+Mobile\+Entity $\ast$const mobile\+\_\+e, Arena\+Entity $\ast$const other\+\_\+e)}{IsColliding(ArenaMobileEntity *const mobile_e, ArenaEntity *const other_e)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Arena\+::\+Is\+Colliding (
+\begin{DoxyParamCaption}
+\item[{{\bf Arena\+Mobile\+Entity} $\ast$const}]{mobile\+\_\+e, }
+\item[{{\bf Arena\+Entity} $\ast$const}]{other\+\_\+e}
+\end{DoxyParamCaption}
+)}\hypertarget{classArena_ab4479b0268867602d0c4b510d5f99aff}{}\label{classArena_ab4479b0268867602d0c4b510d5f99aff}
+
+
+Determine if two entities have collided in the \hyperlink{classArena}{Arena}. Collision is defined as the distance between two entities being less than the sum of their radii. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em mobile\+\_\+e} & This entity is definitely moving. \\
+\hline
+ & {\em other\+\_\+e} & This entity might be mobile or immobile. \\
+\hline
+\mbox{\tt out}  & {\em True} & if entities overlapping. \\
+\hline
+\end{DoxyParams}
+\index{Arena@{Arena}!Update\+Entities\+Timestep@{Update\+Entities\+Timestep}}
+\index{Update\+Entities\+Timestep@{Update\+Entities\+Timestep}!Arena@{Arena}}
+\subsubsection[{\texorpdfstring{Update\+Entities\+Timestep()}{UpdateEntitiesTimestep()}}]{\setlength{\rightskip}{0pt plus 5cm}void Arena\+::\+Update\+Entities\+Timestep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classArena_a682ec81cb30e36e5bb801b3388bcb494}{}\label{classArena_a682ec81cb30e36e5bb801b3388bcb494}
+
+
+Update all entities for a single timestep. 
+
+First calls each entity\textquotesingle{}s Timestep\+Update method to update their speed, heading angle, and position. Then check for collisions between entities or between an entity and a wall. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{arena_8h}{arena.\+h}\item 
+src/\hyperlink{arena_8cc}{arena.\+cc}\end{DoxyCompactItemize}

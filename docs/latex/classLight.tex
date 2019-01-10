@@ -1,0 +1,119 @@
+\hypertarget{classLight}{}\section{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+
+
+Class representing an immobile light within the \hyperlink{classArena}{Arena}.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+
+
+Inheritance diagram for Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Light\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classLight__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLight_aeb5df09a25a32f19fdffa761268ba24f}{Light} ()\hypertarget{classLight_aeb5df09a25a32f19fdffa761268ba24f}{}\label{classLight_aeb5df09a25a32f19fdffa761268ba24f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a61485eb0684868b503e1b96e6a3206c3}{Reset} () override\hypertarget{classLight_a61485eb0684868b503e1b96e6a3206c3}{}\label{classLight_a61485eb0684868b503e1b96e6a3206c3}
+
+\begin{DoxyCompactList}\small\item\em Resets the light to a random position/size. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a97934eec7489f9b072534f5e30a2d90d}{Timestep\+Update} (unsigned int dt) override
+\begin{DoxyCompactList}\small\item\em Update the Lights\textquotesingle{} positions at each timestep. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a7b8ef784bba9ec5725b0b0595e7da850}{Handle\+Collision} (Entity\+Type object\+\_\+type, \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$object=N\+U\+LL)\hypertarget{classLight_a7b8ef784bba9ec5725b0b0595e7da850}{}\label{classLight_a7b8ef784bba9ec5725b0b0595e7da850}
+
+\begin{DoxyCompactList}\small\item\em Handes lights\textquotesingle{} collisions by activating the sensor. \end{DoxyCompactList}\item 
+\hyperlink{structPose}{Pose} \hyperlink{classLight_a7ba6c291707a71363ea8d9e45746713d}{Set\+Pose\+Randomly} ()\hypertarget{classLight_a7ba6c291707a71363ea8d9e45746713d}{}\label{classLight_a7ba6c291707a71363ea8d9e45746713d}
+
+\begin{DoxyCompactList}\small\item\em Makes a new random pose from a pair of random doubles. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classLight_a49b2e32cf8173353ac4689fdadbb95d5}{get\+\_\+name} () const override\hypertarget{classLight_a49b2e32cf8173353ac4689fdadbb95d5}{}\label{classLight_a49b2e32cf8173353ac4689fdadbb95d5}
+
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classLight}{Light} for visualization purposes, and to aid in debugging. \end{DoxyCompactList}\item 
+std\+::clock\+\_\+t \hyperlink{classLight_a20bb393fff4b9bd9c632bb78105088b6}{get\+\_\+start\+\_\+time} ()\hypertarget{classLight_a20bb393fff4b9bd9c632bb78105088b6}{}\label{classLight_a20bb393fff4b9bd9c632bb78105088b6}
+
+\begin{DoxyCompactList}\small\item\em sets a clock using the $<$ctime$>$ package for the sake of having the light only go into avoidance behavior for fixed amounts of time \end{DoxyCompactList}\item 
+void {\bfseries set\+\_\+start\+\_\+time} (std\+::clock\+\_\+t time)\hypertarget{classLight_a5c1d7517b246e99c4be79cff2089fd30}{}\label{classLight_a5c1d7517b246e99c4be79cff2089fd30}
+
+\item 
+bool \hyperlink{classLight_ab76d4dbfd7b7a0fc0d3e83e5e78cb5d1}{get\+\_\+march\+\_\+direction} ()
+\begin{DoxyCompactList}\small\item\em getter for the direction the light is moving; whether advancing or retreating. \end{DoxyCompactList}\item 
+void \hyperlink{classLight_a76cdf1ab10d9cd97468d17c149e5b14a}{set\+\_\+march\+\_\+direction} (bool direction)
+\begin{DoxyCompactList}\small\item\em setter for the direction the light is moving. \end{DoxyCompactList}\item 
+\hyperlink{classMotionHandler}{Motion\+Handler} {\bfseries get\+\_\+motion\+\_\+handler} ()\hypertarget{classLight_a545dceae2ac3cb97cbaf51042b2d80e2}{}\label{classLight_a545dceae2ac3cb97cbaf51042b2d80e2}
+
+\item 
+\hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} {\bfseries get\+\_\+motion\+\_\+behavior} ()\hypertarget{classLight_af8a67e1e3d3e6b21c169cfd6bdaa8ab2}{}\label{classLight_af8a67e1e3d3e6b21c169cfd6bdaa8ab2}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class representing an immobile light within the \hyperlink{classArena}{Arena}. 
+
+Lights are simple mobile entities so they function like simplified robots. 
+
+\subsection{Member Function Documentation}
+\index{Light@{Light}!get\+\_\+march\+\_\+direction@{get\+\_\+march\+\_\+direction}}
+\index{get\+\_\+march\+\_\+direction@{get\+\_\+march\+\_\+direction}!Light@{Light}}
+\subsubsection[{\texorpdfstring{get\+\_\+march\+\_\+direction()}{get_march_direction()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Light\+::get\+\_\+march\+\_\+direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLight_ab76d4dbfd7b7a0fc0d3e83e5e78cb5d1}{}\label{classLight_ab76d4dbfd7b7a0fc0d3e83e5e78cb5d1}
+
+
+getter for the direction the light is moving; whether advancing or retreating. 
+
+\begin{DoxyReturn}{Returns}
+since the light can only be on the advance or on the retreat, the direction it is moving in is represented as a boolean. 
+\end{DoxyReturn}
+\index{Light@{Light}!set\+\_\+march\+\_\+direction@{set\+\_\+march\+\_\+direction}}
+\index{set\+\_\+march\+\_\+direction@{set\+\_\+march\+\_\+direction}!Light@{Light}}
+\subsubsection[{\texorpdfstring{set\+\_\+march\+\_\+direction(bool direction)}{set_march_direction(bool direction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::set\+\_\+march\+\_\+direction (
+\begin{DoxyParamCaption}
+\item[{bool}]{direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classLight_a76cdf1ab10d9cd97468d17c149e5b14a}{}\label{classLight_a76cdf1ab10d9cd97468d17c149e5b14a}
+
+
+setter for the direction the light is moving. 
+
+\begin{DoxyReturn}{Returns}
+if the light is set to false it is {\itshape not} retrearting; therefor it is advancing. If it is set to true it is retreating. I made false the advancing behavior because it is the behavior performed by moving entities and 0/false should be the default. 
+\end{DoxyReturn}
+\index{Light@{Light}!Timestep\+Update@{Timestep\+Update}}
+\index{Timestep\+Update@{Timestep\+Update}!Light@{Light}}
+\subsubsection[{\texorpdfstring{Timestep\+Update(unsigned int dt) override}{TimestepUpdate(unsigned int dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+::\+Timestep\+Update (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classLight_a97934eec7489f9b072534f5e30a2d90d}{}\label{classLight_a97934eec7489f9b072534f5e30a2d90d}
+
+
+Update the Lights\textquotesingle{} positions at each timestep. 
+
+dt is the change in time of one timestep 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{light_8h}{light.\+h}\item 
+src/\hyperlink{light_8cc}{light.\+cc}\end{DoxyCompactItemize}

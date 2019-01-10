@@ -1,0 +1,9 @@
+<map id="src/communication.h" name="src/communication.h">
+<area shape="rect" id="node2" href="$arena_8h.html" title="src/arena.h" alt="" coords="191,80,278,107"/>
+<area shape="rect" id="node4" href="$controller_8h.html" title="src/controller.h" alt="" coords="55,155,163,181"/>
+<area shape="rect" id="node6" href="$graphics__arena__viewer_8h.html" title="src/graphics_arena\l_viewer.h" alt="" coords="211,229,343,271"/>
+<area shape="rect" id="node3" href="$arena_8cc.html" title="src/arena.cc" alt="" coords="187,155,282,181"/>
+<area shape="rect" id="node5" href="$controller_8cc.html" title="src/controller.cc" alt="" coords="5,237,120,263"/>
+<area shape="rect" id="node8" href="$main_8cc.html" title="src/main.cc" alt="" coords="112,326,203,353"/>
+<area shape="rect" id="node7" href="$graphics__arena__viewer_8cc.html" title="src/graphics_arena\l_viewer.cc" alt="" coords="227,319,359,360"/>
+</map>

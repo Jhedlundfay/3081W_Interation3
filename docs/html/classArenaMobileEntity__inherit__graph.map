@@ -1,0 +1,5 @@
+<map id="ArenaMobileEntity" name="ArenaMobileEntity">
+<area shape="rect" id="node3" href="$classLight.html" title="Class representing an immobile light within the Arena. " alt="" coords="5,476,168,715"/>
+<area shape="rect" id="node4" href="$classRobot.html" title="Class representing a robot within the arena. " alt="" coords="193,483,343,707"/>
+<area shape="rect" id="node2" href="$classArenaEntity.html" title="The parent class from which all Arena entities inherit. " alt="" coords="86,5,269,229"/>
+</map>

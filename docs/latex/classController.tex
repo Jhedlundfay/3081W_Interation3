@@ -1,0 +1,89 @@
+\hypertarget{classController}{}\section{Controller Class Reference}
+\label{classController}\index{Controller@{Controller}}
+
+
+\hyperlink{classController}{Controller} that mediates \hyperlink{classArena}{Arena} and \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} communication.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+
+
+Collaboration diagram for Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classController_a95c56822d667e94b031451729ce069a9}{Controller} ()\hypertarget{classController_a95c56822d667e94b031451729ce069a9}{}\label{classController_a95c56822d667e94b031451729ce069a9}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classController}{Controller}\textquotesingle{}s constructor that will create \hyperlink{classArena}{Arena} and Viewer. \end{DoxyCompactList}\item 
+void \hyperlink{classController_a17abb2cec6c0109e9b2df3cdc082eaad}{Run} ()\hypertarget{classController_a17abb2cec6c0109e9b2df3cdc082eaad}{}\label{classController_a17abb2cec6c0109e9b2df3cdc082eaad}
+
+\begin{DoxyCompactList}\small\item\em Run launches the graphics and starts the game. \end{DoxyCompactList}\item 
+void \hyperlink{classController_a6a4a3eaee03f6c4718da3f8293d7e053}{Advance\+Time} (double dt)
+\begin{DoxyCompactList}\small\item\em Advance\+Time is communication from the Viewer to advance the simulation. \end{DoxyCompactList}\item 
+void {\bfseries Change\+Arena} ()\hypertarget{classController_a43f4f5244b752dfbc9585d29dc798058}{}\label{classController_a43f4f5244b752dfbc9585d29dc798058}
+
+\item 
+void {\bfseries Set\+Arena\+F\+E\+Ratio} (float value)\hypertarget{classController_a4ec0f6afedb6d894aec84ac3521995c2}{}\label{classController_a4ec0f6afedb6d894aec84ac3521995c2}
+
+\item 
+void {\bfseries Update\+Light\+Intensity} (float value)\hypertarget{classController_a9a86d4a37d3eefb73b54238a32d74547}{}\label{classController_a9a86d4a37d3eefb73b54238a32d74547}
+
+\item 
+void \hyperlink{classController_a55b8d46984535adb91f40309914e8852}{Accept\+Communication} (Communication com)\hypertarget{classController_a55b8d46984535adb91f40309914e8852}{}\label{classController_a55b8d46984535adb91f40309914e8852}
+
+\begin{DoxyCompactList}\small\item\em Accept\+Communication from either the viewer or the \hyperlink{classArena}{Arena}. \end{DoxyCompactList}\item 
+Communication \hyperlink{classController_ae9b0504ab74cdacc654528b609074adc}{Convert\+Comm} (Communication com)
+\begin{DoxyCompactList}\small\item\em Converts the communication from one to send to the other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classController}{Controller} that mediates \hyperlink{classArena}{Arena} and \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} communication. 
+
+The \hyperlink{classController}{Controller} instantiates the \hyperlink{classArena}{Arena} and the \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer}. The viewer contains the main loop that keeps it live, but at each update, the viewer sends a message to the controller to update its time.
+
+Other types of communication between \hyperlink{classArena}{Arena} and Viewer include\+:
+\begin{DoxyItemize}
+\item Play/\+Pause/\+New Game user input via the Viewer.
+\item Game status from arena to the viewer. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\index{Controller@{Controller}!Advance\+Time@{Advance\+Time}}
+\index{Advance\+Time@{Advance\+Time}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{Advance\+Time(double dt)}{AdvanceTime(double dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\+::\+Advance\+Time (
+\begin{DoxyParamCaption}
+\item[{double}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{classController_a6a4a3eaee03f6c4718da3f8293d7e053}{}\label{classController_a6a4a3eaee03f6c4718da3f8293d7e053}
+
+
+Advance\+Time is communication from the Viewer to advance the simulation. 
+
+first, before anything, check if the arena needs to be renewed because change in one of the slider values\index{Controller@{Controller}!Convert\+Comm@{Convert\+Comm}}
+\index{Convert\+Comm@{Convert\+Comm}!Controller@{Controller}}
+\subsubsection[{\texorpdfstring{Convert\+Comm(\+Communication com)}{ConvertComm(Communication com)}}]{\setlength{\rightskip}{0pt plus 5cm}Communication Controller\+::\+Convert\+Comm (
+\begin{DoxyParamCaption}
+\item[{Communication}]{com}
+\end{DoxyParamCaption}
+)}\hypertarget{classController_ae9b0504ab74cdacc654528b609074adc}{}\label{classController_ae9b0504ab74cdacc654528b609074adc}
+
+
+Converts the communication from one to send to the other. 
+
+Used primarily for testing purposes to ensure communication is being correctly received, interpreted, and relayed.
+
+Converts communication from one source to appropriate communication to the other source. For example, the viewer sends a k\+Key\+Up communication, and this translate to a k\+Increase\+Speed communication to \hyperlink{classArena}{Arena}. \+: Complete the conversion code for all key presses. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{controller_8h}{controller.\+h}\item 
+src/\hyperlink{controller_8cc}{controller.\+cc}\end{DoxyCompactItemize}

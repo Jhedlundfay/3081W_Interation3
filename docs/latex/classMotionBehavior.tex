@@ -1,0 +1,89 @@
+\hypertarget{classMotionBehavior}{}\section{Motion\+Behavior Class Reference}
+\label{classMotionBehavior}\index{Motion\+Behavior@{Motion\+Behavior}}
+
+
+Class managing an \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}\textquotesingle{}s position.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+behavior.\+h$>$}
+
+
+
+Inheritance diagram for Motion\+Behavior\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classMotionBehavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Motion\+Behavior\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMotionBehavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMotionBehavior_aa2d5f7d563f4fdb5702edb8367eaa6e7}{Motion\+Behavior} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ent)\hypertarget{classMotionBehavior_aa2d5f7d563f4fdb5702edb8367eaa6e7}{}\label{classMotionBehavior_aa2d5f7d563f4fdb5702edb8367eaa6e7}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\bfseries Motion\+Behavior} (const \hyperlink{classMotionBehavior}{Motion\+Behavior} \&other)=default\hypertarget{classMotionBehavior_a5fe8e8a49e8cb34519a34ca652a23143}{}\label{classMotionBehavior_a5fe8e8a49e8cb34519a34ca652a23143}
+
+\item 
+\hyperlink{classMotionBehavior}{Motion\+Behavior} \& {\bfseries operator=} (const \hyperlink{classMotionBehavior}{Motion\+Behavior} \&other)=default\hypertarget{classMotionBehavior_a227057c1862c64bbc609705205473abc}{}\label{classMotionBehavior_a227057c1862c64bbc609705205473abc}
+
+\item 
+virtual void \hyperlink{classMotionBehavior_a804f440bb7f03f19abec79a1ab671494}{Update\+Pose} (double dt, \hyperlink{structWheelVelocity}{Wheel\+Velocity} vel=\hyperlink{structWheelVelocity}{Wheel\+Velocity}())
+\begin{DoxyCompactList}\small\item\em Update the position (and possibly orientation) for an \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}, foodd on its current position and velocity. \end{DoxyCompactList}\item 
+\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ \hyperlink{classMotionBehavior_a1daf82b16d312ba6f5f71178e7fafa79}{get\+\_\+entity} ()\hypertarget{classMotionBehavior_a1daf82b16d312ba6f5f71178e7fafa79}{}\label{classMotionBehavior_a1daf82b16d312ba6f5f71178e7fafa79}
+
+\begin{DoxyCompactList}\small\item\em Getter of entity in which this class was created. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ {\bfseries entity\+\_\+}\hypertarget{classMotionBehavior_a9254cf197657a2a52d89dbc01da31b8f}{}\label{classMotionBehavior_a9254cf197657a2a52d89dbc01da31b8f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class managing an \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}\textquotesingle{}s position. 
+
+Update the position foodd on the current speed and position. This is simple, but the framework allows for more sophisticated models of motion in which each wheel has different speeds. 
+
+\subsection{Member Function Documentation}
+\index{Motion\+Behavior@{Motion\+Behavior}!Update\+Pose@{Update\+Pose}}
+\index{Update\+Pose@{Update\+Pose}!Motion\+Behavior@{Motion\+Behavior}}
+\subsubsection[{\texorpdfstring{Update\+Pose(double dt, Wheel\+Velocity vel=\+Wheel\+Velocity())}{UpdatePose(double dt, WheelVelocity vel=WheelVelocity())}}]{\setlength{\rightskip}{0pt plus 5cm}void Motion\+Behavior\+::\+Update\+Pose (
+\begin{DoxyParamCaption}
+\item[{double}]{dt, }
+\item[{{\bf Wheel\+Velocity}}]{vel = {\ttfamily {\bf Wheel\+Velocity}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMotionBehavior_a804f440bb7f03f19abec79a1ab671494}{}\label{classMotionBehavior_a804f440bb7f03f19abec79a1ab671494}
+
+
+Update the position (and possibly orientation) for an \hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity}, foodd on its current position and velocity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & \# of timesteps elapsed since the last update. \\
+\hline
+\mbox{\tt in}  & {\em vel} & \hyperlink{structWheelVelocity}{Wheel\+Velocity} stored within the motion handler \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classMotionBehaviorDifferential_a929c3a05aa2072acf2a508109b1259ef}{Motion\+Behavior\+Differential}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{motion__behavior_8h}{motion\+\_\+behavior.\+h}\item 
+src/\hyperlink{motion__behavior_8cc}{motion\+\_\+behavior.\+cc}\end{DoxyCompactItemize}

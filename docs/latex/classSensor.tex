@@ -1,0 +1,122 @@
+\hypertarget{classSensor}{}\section{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+Sensors are essentially mobile entities but without touch sensors.  
+
+
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
+Collaboration diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensor_a3db50d290b8bd322fb41fe1244a45c7f}{Sensor} (int side, Entity\+Type receiver\+\_\+type\+\_\+)\hypertarget{classSensor_a3db50d290b8bd322fb41fe1244a45c7f}{}\label{classSensor_a3db50d290b8bd322fb41fe1244a45c7f}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSensor}{Sensor}\textquotesingle{}s constructor. \end{DoxyCompactList}\item 
+virtual void {\bfseries Reset} ()\hypertarget{classSensor_a5e6ad1aa7b2c48e59851e03404dacbde}{}\label{classSensor_a5e6ad1aa7b2c48e59851e03404dacbde}
+
+\item 
+void {\bfseries Receive\+Info} (std\+::vector$<$ \hyperlink{classArenaEntity}{Arena\+Entity} $\ast$ $>$ entities)\hypertarget{classSensor_a0d2b338b145734a10194d46edbb653ec}{}\label{classSensor_a0d2b338b145734a10194d46edbb653ec}
+
+\item 
+\hyperlink{structPose}{Pose} {\bfseries Calc\+Pose} (\hyperlink{structPose}{Pose} pose, int radius)\hypertarget{classSensor_a9d492ed06d6cb53b8a85fefe907095b9}{}\label{classSensor_a9d492ed06d6cb53b8a85fefe907095b9}
+
+\item 
+double {\bfseries Distance} (double x1, double x2, double y1, double y2)\hypertarget{classSensor_aa78f80e24756a75b26552c50fa83a53a}{}\label{classSensor_aa78f80e24756a75b26552c50fa83a53a}
+
+\item 
+const \hyperlink{structPose}{Pose} \& {\bfseries get\+\_\+pose} () const \hypertarget{classSensor_a342fd9294709f47ebfafaf4cd76b0e19}{}\label{classSensor_a342fd9294709f47ebfafaf4cd76b0e19}
+
+\item 
+void {\bfseries set\+\_\+pose} (const \hyperlink{structPose}{Pose} \&pose)\hypertarget{classSensor_a8c0ebd31f6d6203c717e1a77acb0e6bb}{}\label{classSensor_a8c0ebd31f6d6203c717e1a77acb0e6bb}
+
+\item 
+void {\bfseries set\+\_\+position} (const double inx, const double iny)\hypertarget{classSensor_aa38343db9a4da55dde95cb2579204b06}{}\label{classSensor_aa38343db9a4da55dde95cb2579204b06}
+
+\item 
+void {\bfseries set\+\_\+heading} (const double t)\hypertarget{classSensor_a95e911a62cef5adfbb0a8ee395cfa881}{}\label{classSensor_a95e911a62cef5adfbb0a8ee395cfa881}
+
+\item 
+void {\bfseries Relative\+Change\+Heading} (const double delta)\hypertarget{classSensor_ad93b67ee775232e4b6e939fd043f0b84}{}\label{classSensor_ad93b67ee775232e4b6e939fd043f0b84}
+
+\item 
+const \hyperlink{structRgbColor}{Rgb\+Color} \& {\bfseries get\+\_\+color} () const \hypertarget{classSensor_af5c275ceac411cfcc0903d6d837ed3e7}{}\label{classSensor_af5c275ceac411cfcc0903d6d837ed3e7}
+
+\item 
+void {\bfseries set\+\_\+color} (const \hyperlink{structRgbColor}{Rgb\+Color} \&color)\hypertarget{classSensor_a4c7c83edd18efc4a93d3fda798dbceec}{}\label{classSensor_a4c7c83edd18efc4a93d3fda798dbceec}
+
+\item 
+double {\bfseries get\+\_\+radius} () const \hypertarget{classSensor_ac162788b261665579ba610532bf4a4cc}{}\label{classSensor_ac162788b261665579ba610532bf4a4cc}
+
+\item 
+void {\bfseries set\+\_\+radius} (double radius)\hypertarget{classSensor_a74578f3ec9a9c6e210789b207af2089e}{}\label{classSensor_a74578f3ec9a9c6e210789b207af2089e}
+
+\item 
+Entity\+Type {\bfseries get\+\_\+type} () const \hypertarget{classSensor_aeff6585edbe2f303da79a02c7c5a0d41}{}\label{classSensor_aeff6585edbe2f303da79a02c7c5a0d41}
+
+\item 
+void {\bfseries set\+\_\+type} (Entity\+Type et)\hypertarget{classSensor_ace463933d894e91350f7598b2f42def1}{}\label{classSensor_ace463933d894e91350f7598b2f42def1}
+
+\item 
+int {\bfseries get\+\_\+id} () const \hypertarget{classSensor_a014c445e574b86f3684dab5e6194977d}{}\label{classSensor_a014c445e574b86f3684dab5e6194977d}
+
+\item 
+void {\bfseries set\+\_\+id} (int id)\hypertarget{classSensor_a62d902d9bf052d3a1d8d0e98d5da70d0}{}\label{classSensor_a62d902d9bf052d3a1d8d0e98d5da70d0}
+
+\item 
+bool {\bfseries is\+\_\+mobile} (void)\hypertarget{classSensor_a819aa6bf72c824c0e3b0e2a85c05431c}{}\label{classSensor_a819aa6bf72c824c0e3b0e2a85c05431c}
+
+\item 
+void {\bfseries set\+\_\+mobility} (bool value)\hypertarget{classSensor_ac99e7911f9bafc6268838c7c442ae35b}{}\label{classSensor_ac99e7911f9bafc6268838c7c442ae35b}
+
+\item 
+bool {\bfseries is\+\_\+active} ()\hypertarget{classSensor_acc1bddd754c5a344d659339ad9ca29c8}{}\label{classSensor_acc1bddd754c5a344d659339ad9ca29c8}
+
+\item 
+void {\bfseries set\+\_\+activity} (bool value)\hypertarget{classSensor_a0423f1c97ee6117b6f7ea2f904187b67}{}\label{classSensor_a0423f1c97ee6117b6f7ea2f904187b67}
+
+\item 
+virtual double {\bfseries get\+\_\+speed} ()\hypertarget{classSensor_acd39d4b288071f00af00dc7b91c23535}{}\label{classSensor_acd39d4b288071f00af00dc7b91c23535}
+
+\item 
+virtual void {\bfseries set\+\_\+speed} (double sp)\hypertarget{classSensor_adc40f680bc255619f4e966aefc0337c0}{}\label{classSensor_adc40f680bc255619f4e966aefc0337c0}
+
+\item 
+int {\bfseries which\+\_\+side} ()\hypertarget{classSensor_aa7c8b3c67f2ecf38f290e43eb82928be}{}\label{classSensor_aa7c8b3c67f2ecf38f290e43eb82928be}
+
+\item 
+void {\bfseries set\+\_\+side} (int side)\hypertarget{classSensor_a3059a194b225f0aa44b67c2a57c00c47}{}\label{classSensor_a3059a194b225f0aa44b67c2a57c00c47}
+
+\item 
+void {\bfseries set\+\_\+impulse} (double impulse)\hypertarget{classSensor_a04df3ce884e6c9b0e4f322c2ae48c0cf}{}\label{classSensor_a04df3ce884e6c9b0e4f322c2ae48c0cf}
+
+\item 
+double {\bfseries get\+\_\+impulse} ()\hypertarget{classSensor_aec7fb6b13d6642f6ca8dc8028c9ba39b}{}\label{classSensor_aec7fb6b13d6642f6ca8dc8028c9ba39b}
+
+\item 
+void {\bfseries set\+\_\+receiver\+\_\+type} (Entity\+Type type)\hypertarget{classSensor_a3b3e712ea3856d16bfe194ef4ea55793}{}\label{classSensor_a3b3e712ea3856d16bfe194ef4ea55793}
+
+\item 
+Entity\+Type {\bfseries get\+\_\+receiver\+\_\+type} ()\hypertarget{classSensor_a878345d739f859d551dafb1148ebcd4a}{}\label{classSensor_a878345d739f859d551dafb1148ebcd4a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sensors are essentially mobile entities but without touch sensors. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{sensor_8h}{sensor.\+h}\item 
+src/\hyperlink{sensor_8cc}{sensor.\+cc}\end{DoxyCompactItemize}

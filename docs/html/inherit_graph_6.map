@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMotionBehavior.html" title="Class managing an ArenaMobileEntity&#39;s position. " alt="" coords="5,5,117,32"/>
+<area shape="rect" id="node2" href="$classMotionBehaviorDifferential.html" title="A simple model of differential drive kinematics foodd on the notes here: ~https://chess.eecs.berkeley.edu/eecs149/documentation/differentialDrive.pdf~. " alt="" coords="165,5,340,32"/>
+</map>

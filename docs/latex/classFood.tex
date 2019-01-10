@@ -1,0 +1,95 @@
+\hypertarget{classFood}{}\section{Food Class Reference}
+\label{classFood}\index{Food@{Food}}
+
+
+Class representing an immobile food source within the \hyperlink{classArena}{Arena}.  
+
+
+
+
+{\ttfamily \#include $<$food.\+h$>$}
+
+
+
+Inheritance diagram for Food\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classFood__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Food\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classFood__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFood_a75d4d7f76fd495cc8133302ca9fdc485}{Food} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classFood_a1a12bfd50400e04b595c24a512317c1a}{Reset} () override\hypertarget{classFood_a1a12bfd50400e04b595c24a512317c1a}{}\label{classFood_a1a12bfd50400e04b595c24a512317c1a}
+
+\begin{DoxyCompactList}\small\item\em Reset the \hyperlink{classFood}{Food} using the initialization parameters received by the constructor. \end{DoxyCompactList}\item 
+\hyperlink{structPose}{Pose} \hyperlink{classFood_a33e1fe7add16d51bdb67d9a43779c8c3}{Set\+Pose\+Randomly} ()\hypertarget{classFood_a33e1fe7add16d51bdb67d9a43779c8c3}{}\label{classFood_a33e1fe7add16d51bdb67d9a43779c8c3}
+
+\begin{DoxyCompactList}\small\item\em Turns a pair of random doubles into the pose for the Reset function. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classFood_a5c3bcd5109750a15ebb24b8a2a3cdd07}{get\+\_\+name} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of the \hyperlink{classFood}{Food} for visualization purposes, and to aid in debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing an immobile food source within the \hyperlink{classArena}{Arena}. 
+
+\hyperlink{classFood}{Food} can feed the robots. If the robot passes near or over the food its hunger is set to zero.
+
+The food sources\textquotesingle{} positions can be updated when asked, and they can also track their own velocity and heading. They have a touch sensor for responding to collision events which is activated/deactivated on collision events. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\subsubsection[{\texorpdfstring{Food()}{Food()}}]{\setlength{\rightskip}{0pt plus 5cm}Food\+::\+Food (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFood_a75d4d7f76fd495cc8133302ca9fdc485}{}\label{classFood_a75d4d7f76fd495cc8133302ca9fdc485}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & A food\+\_\+params passed down from \hyperlink{main_8cc}{main.\+cc} for the initialization of the \hyperlink{classFood}{Food}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Food@{Food}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!Food@{Food}}
+\subsubsection[{\texorpdfstring{get\+\_\+name() const override}{get_name() const override}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Food\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classFood_a5c3bcd5109750a15ebb24b8a2a3cdd07}{}\label{classFood_a5c3bcd5109750a15ebb24b8a2a3cdd07}
+
+
+Get the name of the \hyperlink{classFood}{Food} for visualization purposes, and to aid in debugging. 
+
+\begin{DoxyReturn}{Returns}
+Name of the \hyperlink{classFood}{Food}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classArenaEntity_ad43152003033cf01ad86eeff1990b69a}{Arena\+Entity}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{food_8h}{food.\+h}\item 
+src/\hyperlink{food_8cc}{food.\+cc}\end{DoxyCompactItemize}

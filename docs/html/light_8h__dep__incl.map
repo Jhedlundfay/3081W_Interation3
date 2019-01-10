@@ -1,0 +1,12 @@
+<map id="src/light.h" name="src/light.h">
+<area shape="rect" id="node2" href="$entity__factory_8h.html" title="src/entity_factory.h" alt="" coords="253,80,388,107"/>
+<area shape="rect" id="node11" href="$light_8cc.html" title="src/light.cc" alt="" coords="412,80,499,107"/>
+<area shape="rect" id="node3" href="$arena_8h.html" title="src/arena.h" alt="" coords="165,155,252,181"/>
+<area shape="rect" id="node7" href="$graphics__arena__viewer_8h.html" title="src/graphics_arena\l_viewer.h" alt="" coords="209,304,341,345"/>
+<area shape="rect" id="node10" href="$entity__factory_8cc.html" title="src/entity_factory.cc" alt="" coords="358,155,499,181"/>
+<area shape="rect" id="node4" href="$arena_8cc.html" title="src/arena.cc" alt="" coords="5,229,100,256"/>
+<area shape="rect" id="node5" href="$controller_8h.html" title="src/controller.h" alt="" coords="124,229,232,256"/>
+<area shape="rect" id="node6" href="$controller_8cc.html" title="src/controller.cc" alt="" coords="19,311,134,338"/>
+<area shape="rect" id="node9" href="$main_8cc.html" title="src/main.cc" alt="" coords="126,401,217,427"/>
+<area shape="rect" id="node8" href="$graphics__arena__viewer_8cc.html" title="src/graphics_arena\l_viewer.cc" alt="" coords="241,393,373,435"/>
+</map>

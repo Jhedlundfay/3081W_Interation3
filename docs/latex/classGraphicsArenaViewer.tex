@@ -1,0 +1,379 @@
+\hypertarget{classGraphicsArenaViewer}{}\section{Graphics\+Arena\+Viewer Class Reference}
+\label{classGraphicsArenaViewer}\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+
+
+An application that uses the Min\+Gfx library to open up a window that includes a few buttons for controlling the simulation and can be used to draw circles and other computer graphics.  
+
+
+
+
+{\ttfamily \#include $<$graphics\+\_\+arena\+\_\+viewer.\+h$>$}
+
+
+
+Inheritance diagram for Graphics\+Arena\+Viewer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classGraphicsArenaViewer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Graphics\+Arena\+Viewer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classGraphicsArenaViewer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraphicsArenaViewer_a869510833897508300da65b1eb0c5d09}{Graphics\+Arena\+Viewer} (const struct \hyperlink{structarena__params}{arena\+\_\+params} $\ast$const params, \hyperlink{classArena}{Arena} $\ast$arena, \hyperlink{classController}{Controller} $\ast$controller)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classGraphicsArenaViewer_a88cea02aab1550a7f315fbf4f3868109}{$\sim$\+Graphics\+Arena\+Viewer} () override
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_aeec66666382aa0312574d70aa58de250}{Update\+Simulation} (double dt) override
+\begin{DoxyCompactList}\small\item\em Informs the \hyperlink{classArena}{Arena} of the new time, so that it can update. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a7cc65fd0e2e8c1f6138608e398c7c887}{On\+Playing\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the pause button on the G\+UI. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a7a573f7f55d54fd066d3d47df7a6454b}{On\+New\+Game\+Btn\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Handle the user pressing the new game button on the G\+UI.. \end{DoxyCompactList}\item 
+void {\bfseries On\+Food\+Btn\+Pressed} ()\hypertarget{classGraphicsArenaViewer_ae7eba0a3b3f7b2bddb40b2ddc6dfc694}{}\label{classGraphicsArenaViewer_ae7eba0a3b3f7b2bddb40b2ddc6dfc694}
+
+\item 
+void \hyperlink{classGraphicsArenaViewer_a74b5c524369a62ba419c89677c646d9e}{On\+Mouse\+Move} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Point2 \&pos, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Vector2 \&delta) override
+\begin{DoxyCompactList}\small\item\em Called each time the mouse moves on the screen within the G\+UI window. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_adf2fb01c3ca8b1774f031d68616b288c}{On\+Left\+Mouse\+Down} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Point2 \&pos) override
+\begin{DoxyCompactList}\small\item\em Called each time the left mouse button is clicked. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_abe4f11ab9bfb6055280ddf2b671d7032}{On\+Left\+Mouse\+Up} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Point2 \&pos) override
+\begin{DoxyCompactList}\small\item\em Called each time the left mouse button is released. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a178a9f09ff241d4dc032b6d0998cc9c6}{On\+Right\+Mouse\+Down} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Point2 \&pos) override
+\begin{DoxyCompactList}\small\item\em Called each time the right mouse button is clicked. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a5dfa16dca83575e253b6d3ea344f8746}{On\+Right\+Mouse\+Up} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const Point2 \&pos) override
+\begin{DoxyCompactList}\small\item\em Called each time the right mouse button is released. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_ab0001d4a3ebde2b1f5b4cb7770824726}{On\+Key\+Down} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const char $\ast$c, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int modifiers) override
+\begin{DoxyCompactList}\small\item\em Called each time a character key is pressed. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_ac3e749f6a75bdd5b32d23c9c8913f9d8}{On\+Key\+Up} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} const char $\ast$c, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int modifiers) override
+\begin{DoxyCompactList}\small\item\em Called each time a character key is released. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a7535c2c7c4672ae6e8c4a52a373de03d}{On\+Special\+Key\+Down} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int key, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int scancode, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int modifiers) override
+\begin{DoxyCompactList}\small\item\em Called each time a special (non-\/alphabetic) key is pressed. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a086e2e29e1a5745a8ee4f12996897b22}{On\+Special\+Key\+Up} (\hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int key, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int scancode, \hyperlink{common_8h_a2e3484535ee610c8e19e9859563abe48}{\+\_\+\+\_\+unused} int modifiers) override
+\begin{DoxyCompactList}\small\item\em Called each time a special (non-\/alphabetic) key is released. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_a7d59755e3f7674f382127fe135492eeb}{Draw\+Using\+Nano\+VG} (N\+V\+Gcontext $\ast$ctx) override
+\begin{DoxyCompactList}\small\item\em Draw the \hyperlink{classArena}{Arena} with all of its entities using {\ttfamily nanogui}. \end{DoxyCompactList}\item 
+void \hyperlink{classGraphicsArenaViewer_af894508bfa039199c6ff7f1b5a7da158}{Draw\+Using\+Open\+GL} () override\hypertarget{classGraphicsArenaViewer_af894508bfa039199c6ff7f1b5a7da158}{}\label{classGraphicsArenaViewer_af894508bfa039199c6ff7f1b5a7da158}
+
+\begin{DoxyCompactList}\small\item\em Draw using {\ttfamily Open\+GL}. This method is unimplemented, as currently we are doing all drawing with {\ttfamily nanovg} in this application, so it is empty. \end{DoxyCompactList}\item 
+\hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} \& \hyperlink{classGraphicsArenaViewer_a289278f7b338fc60f983827d21b159ff}{operator=} (const \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} \&other)=delete\hypertarget{classGraphicsArenaViewer_a289278f7b338fc60f983827d21b159ff}{}\label{classGraphicsArenaViewer_a289278f7b338fc60f983827d21b159ff}
+
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the assignment operator is not defined. This {\ttfamily deletes} the default assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{classGraphicsArenaViewer_afa70b72e0769db0f3f41fe37bc540621}{Graphics\+Arena\+Viewer} (const \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer} \&other)=delete\hypertarget{classGraphicsArenaViewer_afa70b72e0769db0f3f41fe37bc540621}{}\label{classGraphicsArenaViewer_afa70b72e0769db0f3f41fe37bc540621}
+
+\begin{DoxyCompactList}\small\item\em Under certain circumstance, the compiler requires that the copy constructor is not defined. This {\ttfamily deletes} the default copy constructor. \end{DoxyCompactList}\item 
+void {\bfseries set\+\_\+arena} (\hyperlink{classArena}{Arena} $\ast$arena)\hypertarget{classGraphicsArenaViewer_ab87eec45fc632e13b32fba41a69526c7}{}\label{classGraphicsArenaViewer_ab87eec45fc632e13b32fba41a69526c7}
+
+\item 
+int {\bfseries get\+\_\+n\+\_\+robots} ()\hypertarget{classGraphicsArenaViewer_a0580286b32e45000186ea43d1f7673b7}{}\label{classGraphicsArenaViewer_a0580286b32e45000186ea43d1f7673b7}
+
+\item 
+int {\bfseries get\+\_\+n\+\_\+lights} ()\hypertarget{classGraphicsArenaViewer_a5cf0a1109c13c8ba8c7765f149fdd101}{}\label{classGraphicsArenaViewer_a5cf0a1109c13c8ba8c7765f149fdd101}
+
+\item 
+int {\bfseries get\+\_\+n\+\_\+foods} ()\hypertarget{classGraphicsArenaViewer_adb7ee44664b1ada25ea1a0212e0f39e9}{}\label{classGraphicsArenaViewer_adb7ee44664b1ada25ea1a0212e0f39e9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An application that uses the Min\+Gfx library to open up a window that includes a few buttons for controlling the simulation and can be used to draw circles and other computer graphics. 
+
+After constructing a new \hyperlink{classGraphicsArenaViewer}{Graphics\+Arena\+Viewer}, call Run to start and run the application. Run will not return until the application window is closed. Example\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{
+    RobotViewer *app = \textcolor{keyword}{new} RobotViewer();
+    app->Run();
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+While the window is open Update\+Simulation will be called repeatedly, once per frame. Fill this in to update your simulation or perform any other processing that should happen over time as the simulation progresses.
+
+Fill in the {\ttfamily On$\ast$()} methods as desired to respond to user input events.
+
+Fill in the {\ttfamily Draw$\ast$()} methods to draw graphics on the screen using either the {\ttfamily nanovg} library or raw {\ttfamily Open\+GL}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{Graphics\+Arena\+Viewer(const struct arena\+\_\+params $\ast$const params, Arena $\ast$arena, Controller $\ast$controller)}{GraphicsArenaViewer(const struct arena_params *const params, Arena *arena, Controller *controller)}}]{\setlength{\rightskip}{0pt plus 5cm}Graphics\+Arena\+Viewer\+::\+Graphics\+Arena\+Viewer (
+\begin{DoxyParamCaption}
+\item[{const struct {\bf arena\+\_\+params} $\ast$const}]{params, }
+\item[{{\bf Arena} $\ast$}]{arena, }
+\item[{{\bf Controller} $\ast$}]{controller}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classGraphicsArenaViewer_a869510833897508300da65b1eb0c5d09}{}\label{classGraphicsArenaViewer_a869510833897508300da65b1eb0c5d09}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & A \hyperlink{structarena__params}{arena\+\_\+params} passed down from \hyperlink{main_8cc}{main.\+cc} for the initialization of the \hyperlink{classArena}{Arena} and the entities therein. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!````~Graphics\+Arena\+Viewer@{$\sim$\+Graphics\+Arena\+Viewer}}
+\index{````~Graphics\+Arena\+Viewer@{$\sim$\+Graphics\+Arena\+Viewer}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{$\sim$\+Graphics\+Arena\+Viewer() override}{~GraphicsArenaViewer() override}}]{\setlength{\rightskip}{0pt plus 5cm}Graphics\+Arena\+Viewer\+::$\sim$\+Graphics\+Arena\+Viewer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a88cea02aab1550a7f315fbf4f3868109}{}\label{classGraphicsArenaViewer_a88cea02aab1550a7f315fbf4f3868109}
+
+
+Destructor. 
+
+{\ttfamily delete} the contained \hyperlink{classArena}{Arena}. 
+
+\subsection{Member Function Documentation}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!Draw\+Using\+Nano\+VG@{Draw\+Using\+Nano\+VG}}
+\index{Draw\+Using\+Nano\+VG@{Draw\+Using\+Nano\+VG}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{Draw\+Using\+Nano\+V\+G(\+N\+V\+Gcontext $\ast$ctx) override}{DrawUsingNanoVG(NVGcontext *ctx) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+Draw\+Using\+Nano\+VG (
+\begin{DoxyParamCaption}
+\item[{N\+V\+Gcontext $\ast$}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a7d59755e3f7674f382127fe135492eeb}{}\label{classGraphicsArenaViewer_a7d59755e3f7674f382127fe135492eeb}
+
+
+Draw the \hyperlink{classArena}{Arena} with all of its entities using {\ttfamily nanogui}. 
+
+This is the primary driver for drawing all entities in the \hyperlink{classArena}{Arena}. It is called at each iteration of {\ttfamily nanogui\+::mainloop()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ctx} & Context for nanogui. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Key\+Down@{On\+Key\+Down}}
+\index{On\+Key\+Down@{On\+Key\+Down}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Key\+Down(\+\_\+\+\_\+unused const char $\ast$c, \+\_\+\+\_\+unused int modifiers) override}{OnKeyDown(__unused const char *c, __unused int modifiers) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Key\+Down (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const char $\ast$}]{c, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_ab0001d4a3ebde2b1f5b4cb7770824726}{}\label{classGraphicsArenaViewer_ab0001d4a3ebde2b1f5b4cb7770824726}
+
+
+Called each time a character key is pressed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & Character representing a key that was pressed. \\
+\hline
+\mbox{\tt in}  & {\em modifiers} & Any modifier keys that were also pressed. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Key\+Up@{On\+Key\+Up}}
+\index{On\+Key\+Up@{On\+Key\+Up}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Key\+Up(\+\_\+\+\_\+unused const char $\ast$c, \+\_\+\+\_\+unused int modifiers) override}{OnKeyUp(__unused const char *c, __unused int modifiers) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Key\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const char $\ast$}]{c, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_ac3e749f6a75bdd5b32d23c9c8913f9d8}{}\label{classGraphicsArenaViewer_ac3e749f6a75bdd5b32d23c9c8913f9d8}
+
+
+Called each time a character key is released. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & Character representing a key that was released. \\
+\hline
+\mbox{\tt in}  & {\em modifiers} & Any modifier keys that were held with the key. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Left\+Mouse\+Down@{On\+Left\+Mouse\+Down}}
+\index{On\+Left\+Mouse\+Down@{On\+Left\+Mouse\+Down}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Left\+Mouse\+Down(\+\_\+\+\_\+unused const Point2 \&pos) override}{OnLeftMouseDown(__unused const Point2 &pos) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Left\+Mouse\+Down (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const Point2 \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_adf2fb01c3ca8b1774f031d68616b288c}{}\label{classGraphicsArenaViewer_adf2fb01c3ca8b1774f031d68616b288c}
+
+
+Called each time the left mouse button is clicked. 
+
+Origin is at the lower left of the window. This function is a stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position of the release. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Left\+Mouse\+Up@{On\+Left\+Mouse\+Up}}
+\index{On\+Left\+Mouse\+Up@{On\+Left\+Mouse\+Up}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Left\+Mouse\+Up(\+\_\+\+\_\+unused const Point2 \&pos) override}{OnLeftMouseUp(__unused const Point2 &pos) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Left\+Mouse\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const Point2 \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_abe4f11ab9bfb6055280ddf2b671d7032}{}\label{classGraphicsArenaViewer_abe4f11ab9bfb6055280ddf2b671d7032}
+
+
+Called each time the left mouse button is released. 
+
+Origin is at the lower left of the window. This function is a stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position of the release. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Mouse\+Move@{On\+Mouse\+Move}}
+\index{On\+Mouse\+Move@{On\+Mouse\+Move}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Mouse\+Move(\+\_\+\+\_\+unused const Point2 \&pos, \+\_\+\+\_\+unused const Vector2 \&delta) override}{OnMouseMove(__unused const Point2 &pos, __unused const Vector2 &delta) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Mouse\+Move (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const Point2 \&}]{pos, }
+\item[{{\bf \+\_\+\+\_\+unused} const Vector2 \&}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a74b5c524369a62ba419c89677c646d9e}{}\label{classGraphicsArenaViewer_a74b5c524369a62ba419c89677c646d9e}
+
+
+Called each time the mouse moves on the screen within the G\+UI window. 
+
+Origin is at the lower left of the window. This function is a stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position of the release. \\
+\hline
+\mbox{\tt in}  & {\em delta} & How far the mouse has moved. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+New\+Game\+Btn\+Pressed@{On\+New\+Game\+Btn\+Pressed}}
+\index{On\+New\+Game\+Btn\+Pressed@{On\+New\+Game\+Btn\+Pressed}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+New\+Game\+Btn\+Pressed()}{OnNewGameBtnPressed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+New\+Game\+Btn\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGraphicsArenaViewer_a7a573f7f55d54fd066d3d47df7a6454b}{}\label{classGraphicsArenaViewer_a7a573f7f55d54fd066d3d47df7a6454b}
+
+
+Handle the user pressing the new game button on the G\+UI.. 
+
+This will stop the game in progress and reset the in-\/game objects to new positions. The game should become paused agai9n when this happens. \index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Playing\+Btn\+Pressed@{On\+Playing\+Btn\+Pressed}}
+\index{On\+Playing\+Btn\+Pressed@{On\+Playing\+Btn\+Pressed}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Playing\+Btn\+Pressed()}{OnPlayingBtnPressed()}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Playing\+Btn\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGraphicsArenaViewer_a7cc65fd0e2e8c1f6138608e398c7c887}{}\label{classGraphicsArenaViewer_a7cc65fd0e2e8c1f6138608e398c7c887}
+
+
+Handle the user pressing the pause button on the G\+UI. 
+
+This will freeze the graphics--no update, until the pause button is pressed again. \index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Right\+Mouse\+Down@{On\+Right\+Mouse\+Down}}
+\index{On\+Right\+Mouse\+Down@{On\+Right\+Mouse\+Down}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Right\+Mouse\+Down(\+\_\+\+\_\+unused const Point2 \&pos) override}{OnRightMouseDown(__unused const Point2 &pos) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Right\+Mouse\+Down (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const Point2 \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a178a9f09ff241d4dc032b6d0998cc9c6}{}\label{classGraphicsArenaViewer_a178a9f09ff241d4dc032b6d0998cc9c6}
+
+
+Called each time the right mouse button is clicked. 
+
+Origin is at the lower left of the window. This function is a stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position of the release. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Right\+Mouse\+Up@{On\+Right\+Mouse\+Up}}
+\index{On\+Right\+Mouse\+Up@{On\+Right\+Mouse\+Up}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Right\+Mouse\+Up(\+\_\+\+\_\+unused const Point2 \&pos) override}{OnRightMouseUp(__unused const Point2 &pos) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Right\+Mouse\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} const Point2 \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a5dfa16dca83575e253b6d3ea344f8746}{}\label{classGraphicsArenaViewer_a5dfa16dca83575e253b6d3ea344f8746}
+
+
+Called each time the right mouse button is released. 
+
+Origin is at the lower left of the window. This function is a stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position of the release. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Special\+Key\+Down@{On\+Special\+Key\+Down}}
+\index{On\+Special\+Key\+Down@{On\+Special\+Key\+Down}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Special\+Key\+Down(\+\_\+\+\_\+unused int key, \+\_\+\+\_\+unused int scancode, \+\_\+\+\_\+unused int modifiers) override}{OnSpecialKeyDown(__unused int key, __unused int scancode, __unused int modifiers) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Special\+Key\+Down (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} int}]{key, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{scancode, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a7535c2c7c4672ae6e8c4a52a373de03d}{}\label{classGraphicsArenaViewer_a7535c2c7c4672ae6e8c4a52a373de03d}
+
+
+Called each time a special (non-\/alphabetic) key is pressed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key that was pressed. \\
+\hline
+\mbox{\tt in}  & {\em scancode} & The scancode corresponding to the key. \\
+\hline
+\mbox{\tt in}  & {\em modifiers} & Any modifier keys that were also pressed. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!On\+Special\+Key\+Up@{On\+Special\+Key\+Up}}
+\index{On\+Special\+Key\+Up@{On\+Special\+Key\+Up}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{On\+Special\+Key\+Up(\+\_\+\+\_\+unused int key, \+\_\+\+\_\+unused int scancode, \+\_\+\+\_\+unused int modifiers) override}{OnSpecialKeyUp(__unused int key, __unused int scancode, __unused int modifiers) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+On\+Special\+Key\+Up (
+\begin{DoxyParamCaption}
+\item[{{\bf \+\_\+\+\_\+unused} int}]{key, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{scancode, }
+\item[{{\bf \+\_\+\+\_\+unused} int}]{modifiers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_a086e2e29e1a5745a8ee4f12996897b22}{}\label{classGraphicsArenaViewer_a086e2e29e1a5745a8ee4f12996897b22}
+
+
+Called each time a special (non-\/alphabetic) key is released. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em key} & The key that was released. \\
+\hline
+\mbox{\tt in}  & {\em scancode} & The scancode corresponding to the key. \\
+\hline
+\mbox{\tt in}  & {\em modifiers} & Any modifier keys that were also pressed. \\
+\hline
+\end{DoxyParams}
+\index{Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}!Update\+Simulation@{Update\+Simulation}}
+\index{Update\+Simulation@{Update\+Simulation}!Graphics\+Arena\+Viewer@{Graphics\+Arena\+Viewer}}
+\subsubsection[{\texorpdfstring{Update\+Simulation(double dt) override}{UpdateSimulation(double dt) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Graphics\+Arena\+Viewer\+::\+Update\+Simulation (
+\begin{DoxyParamCaption}
+\item[{double}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classGraphicsArenaViewer_aeec66666382aa0312574d70aa58de250}{}\label{classGraphicsArenaViewer_aeec66666382aa0312574d70aa58de250}
+
+
+Informs the \hyperlink{classArena}{Arena} of the new time, so that it can update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The new timestep. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{graphics__arena__viewer_8h}{graphics\+\_\+arena\+\_\+viewer.\+h}\item 
+src/\hyperlink{graphics__arena__viewer_8cc}{graphics\+\_\+arena\+\_\+viewer.\+cc}\end{DoxyCompactItemize}

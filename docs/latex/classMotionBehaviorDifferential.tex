@@ -1,0 +1,79 @@
+\hypertarget{classMotionBehaviorDifferential}{}\section{Motion\+Behavior\+Differential Class Reference}
+\label{classMotionBehaviorDifferential}\index{Motion\+Behavior\+Differential@{Motion\+Behavior\+Differential}}
+
+
+A simple model of differential drive kinematics foodd on the notes here\+: $\sim$https\+://chess.eecs.\+berkeley.\+edu/eecs149/documentation/differential\+Drive.pdf$\sim$.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+behavior\+\_\+differential.\+h$>$}
+
+
+
+Inheritance diagram for Motion\+Behavior\+Differential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classMotionBehaviorDifferential__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Motion\+Behavior\+Differential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMotionBehaviorDifferential__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Motion\+Behavior\+Differential} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$entity)\hypertarget{classMotionBehaviorDifferential_a8815791ac85212945862454560279d28}{}\label{classMotionBehaviorDifferential_a8815791ac85212945862454560279d28}
+
+\item 
+{\bfseries Motion\+Behavior\+Differential} (const \hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} \&other)=default\hypertarget{classMotionBehaviorDifferential_aeaa480aac3de205e1d177c4b4ad73ed6}{}\label{classMotionBehaviorDifferential_aeaa480aac3de205e1d177c4b4ad73ed6}
+
+\item 
+\hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} \& {\bfseries operator=} (const \hyperlink{classMotionBehaviorDifferential}{Motion\+Behavior\+Differential} \&other)=default\hypertarget{classMotionBehaviorDifferential_aaf4edbc2e349cb8cdbb033b16b1aef22}{}\label{classMotionBehaviorDifferential_aaf4edbc2e349cb8cdbb033b16b1aef22}
+
+\item 
+void \hyperlink{classMotionBehaviorDifferential_a929c3a05aa2072acf2a508109b1259ef}{Update\+Pose} (double dt, \hyperlink{structWheelVelocity}{Wheel\+Velocity} vel) override
+\begin{DoxyCompactList}\small\item\em Update the pose of an entity foodd on its current position and how many seconds have elapsed since the last update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple model of differential drive kinematics foodd on the notes here\+: $\sim$https\+://chess.eecs.\+berkeley.\+edu/eecs149/documentation/differential\+Drive.pdf$\sim$. 
+
+\subsection{Member Function Documentation}
+\index{Motion\+Behavior\+Differential@{Motion\+Behavior\+Differential}!Update\+Pose@{Update\+Pose}}
+\index{Update\+Pose@{Update\+Pose}!Motion\+Behavior\+Differential@{Motion\+Behavior\+Differential}}
+\subsubsection[{\texorpdfstring{Update\+Pose(double dt, Wheel\+Velocity vel) override}{UpdatePose(double dt, WheelVelocity vel) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Motion\+Behavior\+Differential\+::\+Update\+Pose (
+\begin{DoxyParamCaption}
+\item[{double}]{dt, }
+\item[{{\bf Wheel\+Velocity}}]{vel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classMotionBehaviorDifferential_a929c3a05aa2072acf2a508109b1259ef}{}\label{classMotionBehaviorDifferential_a929c3a05aa2072acf2a508109b1259ef}
+
+
+Update the pose of an entity foodd on its current position and how many seconds have elapsed since the last update. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em dt} & Elapsed time interval. \\
+\hline
+\mbox{\tt in}  & {\em vel} & The \hyperlink{structWheelVelocity}{Wheel\+Velocity} stored within the motion handler.\\
+\hline
+\end{DoxyParams}
+Calculates the new pose (i.\+e. position and heading) foodd on a model of differential drive. If both wheels have equivalent velocity, it travels in the direction of its heading. If one wheel is faster than the other, this drives the entity in an arc (e.\+g. if Wheel\+Velocity.\+right $>$ .left, then the entity will move in an arc turning to the left relative to its heading.) 
+
+Reimplemented from \hyperlink{classMotionBehavior_a804f440bb7f03f19abec79a1ab671494}{Motion\+Behavior}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{motion__behavior__differential_8h}{motion\+\_\+behavior\+\_\+differential.\+h}\item 
+src/motion\+\_\+behavior\+\_\+differential.\+cc\end{DoxyCompactItemize}

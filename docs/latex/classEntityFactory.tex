@@ -1,0 +1,66 @@
+\hypertarget{classEntityFactory}{}\section{Entity\+Factory Class Reference}
+\label{classEntityFactory}\index{Entity\+Factory@{Entity\+Factory}}
+
+
+A factory for the instantiation of all types of arena entities.  
+
+
+
+
+{\ttfamily \#include $<$entity\+\_\+factory.\+h$>$}
+
+
+
+Collaboration diagram for Entity\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classEntityFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEntityFactory_abaf0c4ceaa682e55f69b0ceae230008a}{Entity\+Factory} ()\hypertarget{classEntityFactory_abaf0c4ceaa682e55f69b0ceae230008a}{}\label{classEntityFactory_abaf0c4ceaa682e55f69b0ceae230008a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEntityFactory}{Entity\+Factory} constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classEntityFactory_ae3246f06fa101178803f76582323d4ad}{$\sim$\+Entity\+Factory} ()=default\hypertarget{classEntityFactory_ae3246f06fa101178803f76582323d4ad}{}\label{classEntityFactory_ae3246f06fa101178803f76582323d4ad}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{classArenaEntity}{Arena\+Entity} $\ast$ \hyperlink{classEntityFactory_abf7b1ac4ec275728b47c37fcd85f81e8}{Create\+Entity} (Entity\+Type etype)
+\begin{DoxyCompactList}\small\item\em Create\+Entity is primary purpose of this class. \end{DoxyCompactList}\item 
+int {\bfseries get\+\_\+robot\+\_\+count} ()\hypertarget{classEntityFactory_acc8d2184f834fe2f663fea781b6aba80}{}\label{classEntityFactory_acc8d2184f834fe2f663fea781b6aba80}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A factory for the instantiation of all types of arena entities. 
+
+The factory keeps track of the number of entities of each type and overall. It assigns ID\textquotesingle{}s to the entity when it creates it. The factory places entities according to the rules for initially placing them. 
+
+\subsection{Member Function Documentation}
+\index{Entity\+Factory@{Entity\+Factory}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!Entity\+Factory@{Entity\+Factory}}
+\subsubsection[{\texorpdfstring{Create\+Entity(\+Entity\+Type etype)}{CreateEntity(EntityType etype)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arena\+Entity} $\ast$ Entity\+Factory\+::\+Create\+Entity (
+\begin{DoxyParamCaption}
+\item[{Entity\+Type}]{etype}
+\end{DoxyParamCaption}
+)}\hypertarget{classEntityFactory_abf7b1ac4ec275728b47c37fcd85f81e8}{}\label{classEntityFactory_abf7b1ac4ec275728b47c37fcd85f81e8}
+
+
+Create\+Entity is primary purpose of this class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em etype} & The type to make. \\
+\hline
+\mbox{\tt out}  & {\em new} & dynamically created entity.\\
+\hline
+\end{DoxyParams}
+Currently, the \hyperlink{classArena}{Arena} gets the entity and places it in the appropriate data structure. It might be useful to instead have the factory place on the appropriate data structure so that the call to \hyperlink{classArena}{Arena} is the same regardless of the entity type. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{entity__factory_8h}{entity\+\_\+factory.\+h}\item 
+src/\hyperlink{entity__factory_8cc}{entity\+\_\+factory.\+cc}\end{DoxyCompactItemize}

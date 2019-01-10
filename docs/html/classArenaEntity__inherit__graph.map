@@ -1,0 +1,7 @@
+<map id="ArenaEntity" name="ArenaEntity">
+<area shape="rect" id="node2" href="$classArenaImmobileEntity.html" title="An immobile entity in the Arena. " alt="" coords="5,314,168,391"/>
+<area shape="rect" id="node4" href="$classArenaMobileEntity.html" title="A mobile entity in the Arena, capable of updating its own position and/or velocity when asked by the ..." alt="" coords="194,277,342,428"/>
+<area shape="rect" id="node3" href="$classFood.html" title="Class representing an immobile food source within the Arena. " alt="" coords="11,535,162,656"/>
+<area shape="rect" id="node5" href="$classLight.html" title="Class representing an immobile light within the Arena. " alt="" coords="187,476,349,715"/>
+<area shape="rect" id="node6" href="$classRobot.html" title="Class representing a robot within the arena. " alt="" coords="374,483,525,707"/>
+</map>

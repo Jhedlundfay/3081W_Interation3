@@ -1,0 +1,10 @@
+<map id="src/entity_factory.h" name="src/entity_factory.h">
+<area shape="rect" id="node2" href="$arena_8h.html" title="src/arena.h" alt="" coords="165,80,252,107"/>
+<area shape="rect" id="node6" href="$graphics__arena__viewer_8h.html" title="src/graphics_arena\l_viewer.h" alt="" coords="209,229,341,271"/>
+<area shape="rect" id="node9" href="$entity__factory_8cc.html" title="src/entity_factory.cc" alt="" coords="358,80,499,107"/>
+<area shape="rect" id="node3" href="$arena_8cc.html" title="src/arena.cc" alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$controller_8h.html" title="src/controller.h" alt="" coords="124,155,232,181"/>
+<area shape="rect" id="node5" href="$controller_8cc.html" title="src/controller.cc" alt="" coords="19,237,134,263"/>
+<area shape="rect" id="node8" href="$main_8cc.html" title="src/main.cc" alt="" coords="126,326,217,353"/>
+<area shape="rect" id="node7" href="$graphics__arena__viewer_8cc.html" title="src/graphics_arena\l_viewer.cc" alt="" coords="241,319,373,360"/>
+</map>

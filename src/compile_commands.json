@@ -1,0 +1,72 @@
+[
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/sensor.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/sensor.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/sensor.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/sensor_touch.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/sensor_touch.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/sensor_touch.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/light.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/light.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/light.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/entity_factory.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/entity_factory.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/entity_factory.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/motion_behavior.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_behavior.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_behavior.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/graphics_arena_viewer.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/graphics_arena_viewer.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/graphics_arena_viewer.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/motion_behavior_differential.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_behavior_differential.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_behavior_differential.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/main.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/main.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/main.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/rgb_color.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/rgb_color.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/rgb_color.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/food.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/food.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/food.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/controller.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/controller.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/controller.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/motion_handler.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_handler.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/motion_handler.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/robot.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/robot.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/robot.cc"
+    },
+    {
+        "command": "c++ -c -W -Werror -Wall -Wextra -fdiagnostics-color=always -Wfloat-equal -Wshadow -Wcast-align -Wcast-qual -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wredundant-decls -Wswitch-default -Weffc++ -Wsuggest-override -Wstrict-null-sentinel -Wsign-promo -Wold-style-cast -Woverloaded-virtual -Wctor-dtor-privacy -g -std=c++14 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3 -I/home/hedlu131/csci3081W/project-hedlu131/iteration3/src -isystem/classes/csel-s18c3081/include -isystem/classes/csel-s18c3081/include/nanovg -isystem/classes/csel-s18c3081/include/MinGfx-1.0 -o ../build/obj/src/arena.o /home/hedlu131/csci3081W/project-hedlu131/iteration3/src/arena.cc",
+        "directory": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src",
+        "file": "/home/hedlu131/csci3081W/project-hedlu131/iteration3/src/arena.cc"
+    }
+]

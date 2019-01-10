@@ -1,0 +1,9 @@
+<map id="src/arena_mobile_entity.h" name="src/arena_mobile_entity.h">
+<area shape="rect" id="node3" href="$arena__entity_8h.html" title="src/arena_entity.h" alt="" coords="384,155,510,181"/>
+<area shape="rect" id="node5" href="$common_8h.html" title="src/common.h" alt="" coords="394,304,500,331"/>
+<area shape="rect" id="node13" href="$sensor__touch_8h.html" title="src/sensor_touch.h" alt="" coords="228,80,362,107"/>
+<area shape="rect" id="node7" href="$entity__type_8h.html" title="src/entity_type.h" alt="" coords="290,229,409,256"/>
+<area shape="rect" id="node8" href="$params_8h.html" title="src/params.h" alt="" coords="484,229,583,256"/>
+<area shape="rect" id="node9" href="$pose_8h.html" title="src/pose.h" alt="" coords="132,229,215,256"/>
+<area shape="rect" id="node11" href="$rgb__color_8h.html" title="src/rgb_color.h" alt="" coords="686,229,794,256"/>
+</map>

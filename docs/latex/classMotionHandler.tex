@@ -1,0 +1,103 @@
+\hypertarget{classMotionHandler}{}\section{Motion\+Handler Class Reference}
+\label{classMotionHandler}\index{Motion\+Handler@{Motion\+Handler}}
+
+
+Class for managing the pose and wheel velocity of the entity.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+handler.\+h$>$}
+
+
+
+Collaboration diagram for Motion\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMotionHandler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMotionHandler_a48c0070bfda6acb8a7493eb7fe1200c4}{Motion\+Handler} (\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ent)\hypertarget{classMotionHandler_a48c0070bfda6acb8a7493eb7fe1200c4}{}\label{classMotionHandler_a48c0070bfda6acb8a7493eb7fe1200c4}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bfseries Motion\+Handler} (const \hyperlink{classMotionHandler}{Motion\+Handler} \&other)=default\hypertarget{classMotionHandler_a91dc98beab9d5ccce6b6c18ce32c0488}{}\label{classMotionHandler_a91dc98beab9d5ccce6b6c18ce32c0488}
+
+\item 
+\hyperlink{classMotionHandler}{Motion\+Handler} \& {\bfseries operator=} (const \hyperlink{classMotionHandler}{Motion\+Handler} \&other)=default\hypertarget{classMotionHandler_ad45188f2d9794fd2b257d586a7b522e6}{}\label{classMotionHandler_ad45188f2d9794fd2b257d586a7b522e6}
+
+\item 
+void \hyperlink{classMotionHandler_a44b092d9627f25f57c50ec8886d0bc29}{Update\+Velocity} ()\hypertarget{classMotionHandler_a44b092d9627f25f57c50ec8886d0bc29}{}\label{classMotionHandler_a44b092d9627f25f57c50ec8886d0bc29}
+
+\begin{DoxyCompactList}\small\item\em Update the heading angle according to the touch sensor reading. \end{DoxyCompactList}\item 
+double \hyperlink{classMotionHandler_a7a9b503e3da267c7af25d58daff5f216}{get\+\_\+speed\+\_\+delta} () const \hypertarget{classMotionHandler_a7a9b503e3da267c7af25d58daff5f216}{}\label{classMotionHandler_a7a9b503e3da267c7af25d58daff5f216}
+
+\begin{DoxyCompactList}\small\item\em Getter for speed delta used when user requests speed increase. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a908b330346b3fe969684106bd5c7619d}{set\+\_\+speed\+\_\+delta} (double sd)\hypertarget{classMotionHandler_a908b330346b3fe969684106bd5c7619d}{}\label{classMotionHandler_a908b330346b3fe969684106bd5c7619d}
+
+\begin{DoxyCompactList}\small\item\em Setter method for the speed delta. Set at initialization only. \end{DoxyCompactList}\item 
+double \hyperlink{classMotionHandler_a67c945d11edc741af5c71c3596ead557}{get\+\_\+angle\+\_\+delta} () const \hypertarget{classMotionHandler_a67c945d11edc741af5c71c3596ead557}{}\label{classMotionHandler_a67c945d11edc741af5c71c3596ead557}
+
+\begin{DoxyCompactList}\small\item\em Getter for angle delta used when user requests turning. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a8c2811ddf1a0f077fec829c460009286}{set\+\_\+angle\+\_\+delta} (double ad)\hypertarget{classMotionHandler_a8c2811ddf1a0f077fec829c460009286}{}\label{classMotionHandler_a8c2811ddf1a0f077fec829c460009286}
+
+\begin{DoxyCompactList}\small\item\em Setter method for the angle delta. Set at initialization only. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a9a94d7b651c2cf4a0a8ef7ba12354c24}{Kill\+Speed} ()\hypertarget{classMotionHandler_a9a94d7b651c2cf4a0a8ef7ba12354c24}{}\label{classMotionHandler_a9a94d7b651c2cf4a0a8ef7ba12354c24}
+
+\begin{DoxyCompactList}\small\item\em Decrease the speed of both wheels to zero immediately. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a259b14f5c68b24a93fd3e1f463055e32}{Advance} ()\hypertarget{classMotionHandler_a259b14f5c68b24a93fd3e1f463055e32}{}\label{classMotionHandler_a259b14f5c68b24a93fd3e1f463055e32}
+
+\begin{DoxyCompactList}\small\item\em The Advancing behavior of the light\+: moves forward at a set speed. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a1e732c722f9555071f37754a6ac13d6a}{Retreat} ()\hypertarget{classMotionHandler_a1e732c722f9555071f37754a6ac13d6a}{}\label{classMotionHandler_a1e732c722f9555071f37754a6ac13d6a}
+
+\begin{DoxyCompactList}\small\item\em The Retreating behavior of the light\+: moves backwards in an arc. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_ae919b4594fd801be64ca81dc4889ada4}{Handle\+Impulse} (double impulse, int behavior, int side)\hypertarget{classMotionHandler_ae919b4594fd801be64ca81dc4889ada4}{}\label{classMotionHandler_ae919b4594fd801be64ca81dc4889ada4}
+
+\begin{DoxyCompactList}\small\item\em Switch cases for dealing with impulses from sensor given the behavior of the vehicle. \end{DoxyCompactList}\item 
+double \hyperlink{classMotionHandler_a4024f3b5562b5e49bfaeab9f82c0762b}{get\+\_\+max\+\_\+speed} () const \hypertarget{classMotionHandler_a4024f3b5562b5e49bfaeab9f82c0762b}{}\label{classMotionHandler_a4024f3b5562b5e49bfaeab9f82c0762b}
+
+\begin{DoxyCompactList}\small\item\em Getter method for the maximum speed of entity. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_a32e832d35e73e9db85c16b3ff569196e}{set\+\_\+max\+\_\+speed} (double ms)\hypertarget{classMotionHandler_a32e832d35e73e9db85c16b3ff569196e}{}\label{classMotionHandler_a32e832d35e73e9db85c16b3ff569196e}
+
+\begin{DoxyCompactList}\small\item\em Setter method for the maximum speed. Set at initialization only. \end{DoxyCompactList}\item 
+double \hyperlink{classMotionHandler_a55eb7aeb355b6ee86b2bd8751fde6cb5}{get\+\_\+max\+\_\+angle} () const \hypertarget{classMotionHandler_a55eb7aeb355b6ee86b2bd8751fde6cb5}{}\label{classMotionHandler_a55eb7aeb355b6ee86b2bd8751fde6cb5}
+
+\begin{DoxyCompactList}\small\item\em Getter method for the maximum angle. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_aa73973c705626f1f95ac59391f23bcc9}{set\+\_\+max\+\_\+angle} (double ma)\hypertarget{classMotionHandler_aa73973c705626f1f95ac59391f23bcc9}{}\label{classMotionHandler_aa73973c705626f1f95ac59391f23bcc9}
+
+\begin{DoxyCompactList}\small\item\em Setter method for the maximum angle. Set at initialization only. \end{DoxyCompactList}\item 
+\hyperlink{structWheelVelocity}{Wheel\+Velocity} \hyperlink{classMotionHandler_a99fe1b248e817556de2b366a2d98c57c}{get\+\_\+velocity} () const \hypertarget{classMotionHandler_a99fe1b248e817556de2b366a2d98c57c}{}\label{classMotionHandler_a99fe1b248e817556de2b366a2d98c57c}
+
+\begin{DoxyCompactList}\small\item\em Getter for \hyperlink{structWheelVelocity}{Wheel\+Velocity} struct, which has a .left and .right value. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_ac4bf67ba783c1afb5a5839229de3f3f9}{set\+\_\+velocity} (\hyperlink{structWheelVelocity}{Wheel\+Velocity} vel)\hypertarget{classMotionHandler_ac4bf67ba783c1afb5a5839229de3f3f9}{}\label{classMotionHandler_ac4bf67ba783c1afb5a5839229de3f3f9}
+
+\begin{DoxyCompactList}\small\item\em Setter for \hyperlink{structWheelVelocity}{Wheel\+Velocity} struct with struct as input param. \end{DoxyCompactList}\item 
+void \hyperlink{classMotionHandler_af31975aa667ca20835e4d5bb0216706e}{set\+\_\+velocity} (double vl, double vr)\hypertarget{classMotionHandler_af31975aa667ca20835e4d5bb0216706e}{}\label{classMotionHandler_af31975aa667ca20835e4d5bb0216706e}
+
+\begin{DoxyCompactList}\small\item\em Setter for \hyperlink{structWheelVelocity}{Wheel\+Velocity} struct with input params of .left and .right components. \end{DoxyCompactList}\item 
+\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ {\bfseries get\+\_\+entity} ()\hypertarget{classMotionHandler_ad8472612d15be1ada7f919f45d245adc}{}\label{classMotionHandler_ad8472612d15be1ada7f919f45d245adc}
+
+\item 
+double {\bfseries clamp\+\_\+vel} (double vel)\hypertarget{classMotionHandler_ace63febeef5e44b20836eeb517e47b6c}{}\label{classMotionHandler_ace63febeef5e44b20836eeb517e47b6c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArenaMobileEntity}{Arena\+Mobile\+Entity} $\ast$ {\bfseries entity\+\_\+}\hypertarget{classMotionHandler_a659fd1ec8878260a63779bf45681f5a4}{}\label{classMotionHandler_a659fd1ec8878260a63779bf45681f5a4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for managing the pose and wheel velocity of the entity. 
+
+The pose.\+heading will change when the entity collides. The pose position will change at each timestep, which is determined by the motion behavior, not the handler. The pose.\+heading might change at each timestep (if wheel velocities are not equivalent), again determined by the motion behavior. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{motion__handler_8h}{motion\+\_\+handler.\+h}\item 
+src/\hyperlink{motion__handler_8cc}{motion\+\_\+handler.\+cc}\end{DoxyCompactItemize}

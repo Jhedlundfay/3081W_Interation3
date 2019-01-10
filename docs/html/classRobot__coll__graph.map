@@ -1,0 +1,5 @@
+<map id="Robot" name="Robot">
+<area shape="rect" id="node2" href="$classArenaMobileEntity.html" title="A mobile entity in the Arena, capable of updating its own position and/or velocity when asked by the ..." alt="" coords="121,292,269,443"/>
+<area shape="rect" id="node3" href="$classArenaEntity.html" title="The parent class from which all Arena entities inherit. " alt="" coords="5,5,188,229"/>
+<area shape="rect" id="node4" href="$classSensorTouch.html" title="Class representing a touch sensor. " alt="" coords="213,42,375,193"/>
+</map>

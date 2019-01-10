@@ -1,0 +1,9 @@
+<map id="src/sensor_touch.cc" name="src/sensor_touch.cc">
+<area shape="rect" id="node3" href="$sensor__touch_8h.html" title="src/sensor_touch.h" alt="" coords="220,80,353,107"/>
+<area shape="rect" id="node6" href="$common_8h.html" title="src/common.h" alt="" coords="335,304,441,331"/>
+<area shape="rect" id="node8" href="$pose_8h.html" title="src/pose.h" alt="" coords="681,229,764,256"/>
+<area shape="rect" id="node10" href="$entity__type_8h.html" title="src/entity_type.h" alt="" coords="153,229,271,256"/>
+<area shape="rect" id="node11" href="$arena__entity_8h.html" title="src/arena_entity.h" alt="" coords="282,155,409,181"/>
+<area shape="rect" id="node13" href="$params_8h.html" title="src/params.h" alt="" coords="296,229,395,256"/>
+<area shape="rect" id="node14" href="$rgb__color_8h.html" title="src/rgb_color.h" alt="" coords="549,229,657,256"/>
+</map>
